@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マラマハワイ</title>
+    <link rel="stylesheet" href="./HomeWork3 マラマハワイ/style.css">
+    <style>
+        .main {
+            width: 1200px;
+            margin: auto;
+            padding-bottom: 30px;
+            border-bottom: 1px solid gray;
+        }
+        .title {
+            display: flex;
+        }
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+        .secondContainer {
+            display: flex;
+            gap: 40px;
+            flex-direction: row-reverse;
+        }
+        .japaneseTitle {
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .englishTitle {
+            margin-left: 16px;
+            font-size: 14px;
+            padding-top: 15px;
+        }
+        .seeAll {
+            color: #f65936;
+            align-self: center;
+            margin-left: auto;
+            text-decoration: none;
+        }
+        .seeAll:hover {
+            opacity: 0.7;
+        }
+        .mainTheme {
+            text-decoration: none;
+        }
+        .seeAll::after {
+            content: '→';
+            color: #f65936;
+            border-radius: 50%;
+            border: 1px solid #f65936;
+            background-color: transparent;
+        }
+        .mainTitle {
+            margin-top: 24px;
+            text-decoration: none;
+            align-items: center;
+            display: flex;
+            margin-bottom: 8px;
+        }
+        .imgContent {
+            font-size: 12px;
+            margin-left: 5px;
+            text-decoration: none;
+            color: gray;
+        }
+        .subContainer {
+            width: 540px;
+            display: flex;
+        }
+        .subTitle {
+            width: 45%;
+            font-size: 24px;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+        .subTitleRightside {
+            width: 45%;
+            font-size: 11px;
+        }
+        .date {
+            font-size: 11px;
+        }
+        .picture {
+            padding-bottom: 8px;
+        }
+        .rightSubTitle {
+            font-size: 16px;
+            width: 275px;
+            height: 100px;
+            font-weight: bold;
+        }
+        .supMain {
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            display: grid;
+            width: 300px;
+        }
+        .secondSupMain {
+            margin-top: 50px;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            display: grid;
+            width: 300px;
+            justify-content: flex-end;
+        }
+        .companyName {
+            font-size: 11px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <div class="title">
+            <div class="japaneseTitle">
+                旅行者にできること
+            </div>
+            <div class="englishTitle">
+                What Travelers Can Do
+            </div>
+            <a href="https://www.allhawaii.jp/malamahawaii/initiatives/corporate/" class="seeAll">
+                すべて見る
+            </a>
+        </div>
+        <div class="container">
+            <div class="mainTheme">
+                <div class="mainTitle">
+                    <img
+                        src="https://www.allhawaii.jp/malamahawaii/wp-content/themes/malamahawaii/img/common/icon/icon_ocean.svg">
+                    <p class="imgContent">海</p>
+                </div>
+                <div>
+                    <img src="https://www.allhawaii.jp/malamahawaii/wp-content/uploads/2023/11/230820_Puerto-Morelos-Limones_LJM07316-2048x1369.jpg"
+                        width="540" height="300">
+                </div>
+                <div class="subContainer">
+                    <div class="subTitle">
+                        11月はサンゴ白化啓発月間　〜日常でできること〜
+                    </div>
+                    <div class="subTitleRightside">
+                        <div class="subContent">
+                            <p>世界のサンゴ礁を救うことを使命としている環境NGO団体コーラル・リーフ・アライアンス（The Coral Reef Alliance）は、2023年11月を「サ</p>
+                        </div>
+                        <div class="date">
+                            <p>2023.11.09</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="supTheme">
+                <section class="supContainer">
+                    <div class="mainTitle">
+                        <img
+                            src="https://www.allhawaii.jp/malamahawaii/wp-content/themes/malamahawaii/img/common/icon/icon_other.svg">
+                        <a class="imgContent">その他</a>
+                    </div>
+                    <section class="supMain">
+                        <div class="supitems">
+                            <div class="picture">
+                                <img src="https://www.allhawaii.jp/malamahawaii/wp-content/uploads/2023/08/%E7%B1%B3%E5%9B%BD%E3%83%8F%E3%83%AF%E3%82%A4%E5%B7%9E%E3%83%9E%E3%82%A6%E3%82%A4%E9%83%A1%E3%83%9E%E3%82%A6%E3%82%A4%E5%B3%B6%E3%81%AE%E5%B1%B1%E7%81%AB%E4%BA%8B%E6%95%91%E6%8F%B4%E9%87%91-640-%C3%97-427-px-1.png"
+                                    width="275" height="170">
+                            </div>
+                            <div class="rightSubTitle">
+                                火事救援金、日本円で受付開始
+                            </div>
+                            <div class="date">
+                                <p>2023.08.18</p>
+                            </div>
+                        </div>
+                        <div class="supitems">
+                            <div class="picture">
+                                <img src="https://www.allhawaii.jp/malamahawaii/wp-content/uploads/2023/07/image.png"
+                                    width="275" height="170">
+                            </div>
+                            <div class="rightSubTitle">
+                                2023年7月後半～9月にハワイで開催されるカルチャーイベント
+                            </div>
+                            <div class="date">
+                                <p>2023.07.20</p>
+                            </div>
+                        </div>
+                        <div class="supitems">
+                            <div class="picture">
+                                <img src="https://www.allhawaii.jp/malamahawaii/wp-content/uploads/2023/06/MGF-2022-PLHF-Halau-Hula-Ka-Noeau-Kumu-Hula-Michael-Pili-Pang-7-16-22-DSC_8772.jpg"
+                                    width="275" height="170">
+                            </div>
+                            <div class="rightSubTitle">
+                                第46回プリンスロット•フラフェスティバル、楽しい楽しいのイベント7月に開催
+                            </div>
+                            <div class="date">
+                                <p>2023.07.20</p>
+                            </div>
+                        </div>
+                        <div class="supitems">
+                            <div class="picture">
+                                <img src="https://www.allhawaii.jp/malamahawaii/wp-content/uploads/2021/04/Screenshot-107.png"
+                                    width="275" height="170">
+                            </div>
+                            <div class="rightSubTitle">
+                                今年もアースデーにビーチクリーンを開催！
+                            </div>
+                            <div class="date">
+                                <p>2023.04.18</p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Second Part -->
+
+
+    <section class="main" style="margin-top: 30px;">
+        <div class="title">
+            <div class="japaneseTitle">
+                企業の取組み
+            </div>
+            <div class="englishTitle">
+                Corporate Initiatives
+            </div>
+            <a href="https://www.allhawaii.jp/malamahawaii/initiatives/corporate/" class="seeAll">
+                すべて見る
+            </a>
+        </div>
+        <div class="secondContainer">
+            <div class="mainTheme">
+                <div class="mainTitle">
+                    <img
+                        src="https://www.allhawaii.jp/malamahawaii/wp-content/themes/malamahawaii/img/common/icon/icon_ocean.svg">
+                    <a class="imgContent">ジャルパック</a>
+                </div>
+                <div>
+                    <img src="https://www.allhawaii.jp/malamahawaii/wp-content/uploads/2022/11/12-Group-photo.jpeg"
+                        width="540" height="300">
+                </div>
+                <div class="subContainer">
+                    <div class="subTitle" style="width: 290px;">
+                        【チームJALハワイ】ビーチクリーンアップ活動で地元コミュニティに貢献
+                    </div>
+                    <div class="subTitleRightside">
+                        <div class="subContent">
+                            <p>JALハワイ支店とJALPAK International Hawaiiで構成された“チームJALハワイ”は、ハワイ州観光局が提唱する「マラマハワイ～ハワイを思</p>
+                        </div>
+                        <p class="date">2023.11.09</p>
+                    </div>
+                </div>
+            </div>
+            <div class="supTheme">
+                <section class="supContainer">
+                    <section class="secondSupMain">
+                        <div class="supitems">
+                            <div class="picture">
+                                <img src="https://www.allhawaii.jp/malamahawaii/wp-content/uploads/2022/07/278637300_1713831695616085_8588043877096982703_n.jpg"
+                                    width="275" height="170">
+                            </div>
+                            <div class="rightSubTitle">
+                                廃棄された漁網を服に生まれ変わらせる！海を守ろうと活動する人々が主役のドキュメンタリーを作るプロジェクトをサポートしませんか？
+                            </div>
+                            <p class="date">2022.07.27</p>
+                        </div>
+                        <div class="supitems">
+                            <div class="picture">
+                                <img src="https://www.allhawaii.jp/malamahawaii/wp-content/uploads/2023/07/image.png"
+                                    width="275" height="170">
+                            </div>
+                            <div class="rightSubTitle">
+                                第33回タートル・インディペンデンス・デイ開催
+                            </div>
+                            <p class="date">2022.07.01</p>
+                        </div>
+                        <div class="supitems">
+                            <div class="companyName">オラカイ株式会社</div>
+                            <div class="picture">
+                                <img src="https://www.allhawaii.jp/malamahawaii/wp-content/uploads/2023/06/MGF-2022-PLHF-Halau-Hula-Ka-Noeau-Kumu-Hula-Michael-Pili-Pang-7-16-22-DSC_8772.jpg"
+                                    width="275" height="170">
+                            </div>
+                            <div class="rightSubTitle">
+                                「シーアスパラガス」を生産している「オラカイ」のサステナブルな取り組み
+                            </div>
+                            <p class="date">2022.06.15</p>
+                        </div>
+                        <div class="supitems">
+                            <div class="companyName">ザ・リッツカールトン・レジデンス・ワイキキ</div>
+                            <div class="picture">
+                                <img src="https://www.allhawaii.jp/malamahawaii/wp-content/uploads/2021/04/Screenshot-107.png"
+                                    width="275" height="170">
+                            </div>
+                            <div class="rightSubTitle">
+                                【ザ・リッツ・カールトン・レジデンス ワイキキビーチ】オアフ島内最大運河、アラワイ運河の浄化プロジェクト
+                            </div>
+                            <p class="date">2023.04.18</p>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
