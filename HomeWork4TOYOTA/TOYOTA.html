@@ -1,0 +1,331 @@
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                    <link rel="stylesheet" href="HomeWork4 TOYOTA/style.css">
+                    <style>
+                        body {
+                            display: flex;
+                            justify-content: center;
+                            margin: 0;
+                        }
+                        .main {
+                            width: 1200px;
+                            margin: auto;
+                            text-align: center; 
+                        }
+                        .container {
+                            margin-bottom: 500px;
+                            margin-top: 200px;
+                            position: relative;
+                            height: 500px;
+                        }
+                        .centerimg{
+                            display: inline-block;
+                            z-index: 1; 
+                        }
+                        .title{
+                            top: -100px;
+                            left: 100px;
+                            position: absolute;
+                        }
+                        .titleTop{
+                            height: 100px;
+                            background-color: red;
+                            font-size: 42px;
+                            color: #fff;
+                            display: flex;
+                            width: 250px;
+                        }
+                        .titleNumber{
+                            writing-mode: vertical-rl;
+                            font-size: 50px;
+                            width: 60px;
+                            margin-right: auto;
+                        }
+                        .titleWords{                    
+                            width: 200px;                    
+                            white-space:nowrap;
+                            align-self: center;
+                        }
+                        .titleNumber p,.titleWords p {
+                            margin: 0;
+                        }
+                        .titleBottom{
+                            background-color: black;
+                            color: #fff;
+                            padding: 10px 10px 0;
+                            text-align: left;
+                            width: 230px;
+                            padding-bottom: 30px;
+                        }
+                        .mainTitle{
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                        .titleContent{
+                            font-size: 12px;
+                        }
+                        .grayArea{
+                            content: '';
+                            width: 400px;
+                            height: 250px;
+                            background-color: rgb(233, 233, 233);
+                            margin-top: -550px;
+                            margin-left: 650px;
+                            display: block;
+                            z-index: 0; 
+                        }
+                        .youtubeicon{
+                            width: 100px;
+                            height: 50px;
+                            background-color: red;
+                            margin-top: 65px;
+                            margin-left: 680px;
+                            z-index: 2; 
+                            display: inline-block;
+                            align-self: center;
+                            font-size: 40px;
+                            color: #fff;
+                        }
+                        .whatWeSpeical {
+                            background-color: #ddd;
+                            width: 500px;
+                            margin-top: 209px;
+                            margin-left: 50px;
+                            padding-bottom: 20px;
+                        }
+                        .whatWeSpeicalTitle p{
+                            margin-left: 10px;
+                            margin-bottom: 10px;
+                        }
+                        .subTitle p, .subContent p{
+                            margin: 0 10px 0;
+                        }
+                        .whatWeSpeicalTitle{
+                            padding-top: 5px;
+                            color: red;
+                            font-weight: bolder;
+                            font-size: 20px;
+                        }
+                        .subTitle{
+                            text-align: left;
+                            font-size: 18px;
+                            color: #fff;
+                            margin-left: 10px;
+                        }
+                        .subTitle p{
+                            padding-left: 10px;
+                            margin-right: 350px;
+                            background-color: black;
+                        }
+                        .subContent{
+                            display: flex;
+                            text-align: left;
+                            margin-left: 10px;
+                        }
+                        .subContent p::before{
+                            content: '●';
+                            color: red;
+                            font-size: 10px;
+                            align-items: center;
+                        }
+                        .titleSecond {
+                            top: -100px;
+                            left: 800px;
+                            width: 500px;
+                            position: absolute;
+                            
+                        }
+                        .youtubeicon2 {
+                            width: 100px;
+                            height: 50px;
+                            background-color: red;
+                            margin-top: 65px;
+                            margin-right: 680px;
+                            z-index: 2; 
+                            display: inline-block;
+                            align-self: center;
+                            font-size: 40px;
+                            color: #fff;
+                        }
+                        .grayAreaSecond {
+                            content: '';
+                            width: 400px;
+                            height: 250px;
+                            background-color: rgb(233, 233, 233);
+                            margin-top: -550px;
+                            margin-right: 650px;
+                            display: block;
+                            z-index: 0; 
+                        }
+                        .whatWeSpeical2 {
+                            display: block;
+                            background-color: #ddd;
+                            width: 500px;
+                            margin-top: 209px;
+                            margin-right: 350px;
+                            padding-bottom: 20px;   
+                        }
+                    </style>
+                </head>
+                <body>
+                    <section class="main">
+                        <!-- part1 -->
+                        <div class="bigbox">
+                            <div class="container">
+                                <div class="centerimg">
+                                    <img src="https://toyota.com.tw/asset/img/tech_tnga/advantage-1-video-button-bg.png?9e068d9b">
+                                </div>
+                                <div class="grayArea"></div>
+                                <div class="youtubeicon">▶︎</div>
+                                <div class="title">
+                                    <div class="titleTop">
+                                        <div class="titleNumber">
+                                            <p>01</p>
+                                        </div>
+                                        <div class="titleWords">
+                                            <p>操作樂趣</p>
+                                        </div>
+                                    </div>
+                                    <div class="titleBottom">
+                                        <div class="mainTitle">
+                                            <p>人人滿意的的駕駛體驗</p>
+                                        </div>
+                                        <div class="titleContent">
+                                            <p>CSS 文字換行，強迫不換行。 換行在畫面開發設計上，常常會用於內容過多造成破版的問題，. 此篇可以配合CSS「text-overflow: ellipsis;」屬性限制內容字數</p>
+                                        </div>
+                                    </div>
+                                    <div class="whatWeSpeical">
+                                        <div class="whatWeSpeicalTitle">
+                                            <p>因為我們做了這些革新 ━━━━━━━━━━━━━━━━━━━━━━</p>
+                                        </div>
+                                        <div class="subTitle">
+                                            <p>低重心設計</p>
+                                        </div>
+                                        <div class="subContent">
+                                            <p>Facebook · 【創造你的AI 分身】 · 【TLdraw 用塗鴉畫出整個網頁】 · 【小鹿AI 週報｜第二十九期】 · 【ChatGPT × Excel 企業內訓】</p>
+                                        </div>
+                                        <div class="subTitle">
+                                            <p>車體剛性強化</p>
+                                        </div>
+                                        <div class="subContent">
+                                            <p>貨幣符號≡emoji. 歐元，美元，美分，英鎊，韓元，中國人民幣和日元。 ... 這些特殊符號是真實的文字和可複製並粘貼到</p>
+                                        </div>
+                                        <div class="subTitle">
+                                            <p>四輪獨立懸吊</p>
+                                        </div>
+                                        <div class="subContent">
+                                            <p>生命靈數是每個人出生時自帶的一組特殊且獨特的數字，是由每個人的西元出生年月日所組成，藉由這組屬於你獨一無二的數字，可以看出你的天生能力優勢</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- part2 -->
+                        <div class="bigbox">
+                            <div class="container">
+                                <div class="centerimg">
+                                    <img src="https://toyota.com.tw/asset/img/tech_tnga/advantage-1-video-button-bg.png?9e068d9b">
+                                </div>
+                                <div class="grayAreaSecond"></div>
+                                <div class="youtubeicon2">▶︎</div>
+                                <div class="titleSecond">
+                                    <div class="titleTop">
+                                        <div class="titleNumber">
+                                            <p>02</p>
+                                        </div>
+                                        <div class="titleWords">
+                                            <p>操作樂趣</p>
+                                        </div>
+                                    </div>
+                                    <div class="titleBottom">
+                                        <div class="mainTitle">
+                                            <p>人人滿意的的駕駛體驗</p>
+                                        </div>
+                                        <div class="titleContent">
+                                            <p>CSS 文字換行，強迫不換行。 換行在畫面開發設計上，常常會用於內容過多造成破版的問題，. 此篇可以配合CSS「text-overflow: ellipsis;」屬性限制內容字數</p>
+                                        </div>
+                                    </div>
+                                    <div class="whatWeSpeical2">
+                                        <div class="whatWeSpeicalTitle">
+                                            <p>因為我們做了這些革新 ━━━━━━━━━━━━━━━━━━━━━━</p>
+                                        </div>
+                                        <div class="subTitle">
+                                            <p>低重心設計</p>
+                                        </div>
+                                        <div class="subContent">
+                                            <p>Facebook · 【創造你的AI 分身】 · 【TLdraw 用塗鴉畫出整個網頁】 · 【小鹿AI 週報｜第二十九期】 · 【ChatGPT × Excel 企業內訓】</p>
+                                        </div>
+                                        <div class="subTitle">
+                                            <p>車體剛性強化</p>
+                                        </div>
+                                        <div class="subContent">
+                                            <p>貨幣符號≡emoji. 歐元，美元，美分，英鎊，韓元，中國人民幣和日元。 ... 這些特殊符號是真實的文字和可複製並粘貼到</p>
+                                        </div>
+                                        <div class="subTitle">
+                                            <p>四輪獨立懸吊</p>
+                                        </div>
+                                        <div class="subContent">
+                                            <p>生命靈數是每個人出生時自帶的一組特殊且獨特的數字，是由每個人的西元出生年月日所組成，藉由這組屬於你獨一無二的數字，可以看出你的天生能力優勢</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- part3 -->
+                        <div class="bigbox">
+                            <div class="container">
+                                <div class="centerimg">
+                                    <img src="https://toyota.com.tw/asset/img/tech_tnga/advantage-1-video-button-bg.png?9e068d9b">
+                                </div>
+                                <div class="grayArea"></div>
+                                <div class="youtubeicon">▶︎</div>
+                                <div class="title">
+                                    <div class="titleTop">
+                                        <div class="titleNumber">
+                                            <p>03</p>
+                                        </div>
+                                        <div class="titleWords">
+                                            <p>操作樂趣</p>
+                                        </div>
+                                    </div>
+                                    <div class="titleBottom">
+                                        <div class="mainTitle">
+                                            <p>人人滿意的的駕駛體驗</p>
+                                        </div>
+                                        <div class="titleContent">
+                                            <p>CSS 文字換行，強迫不換行。 換行在畫面開發設計上，常常會用於內容過多造成破版的問題，. 此篇可以配合CSS「text-overflow: ellipsis;」屬性限制內容字數</p>
+                                        </div>
+                                    </div>
+                                    <div class="whatWeSpeical">
+                                        <div class="whatWeSpeicalTitle">
+                                            <p>因為我們做了這些革新 ━━━━━━━━━━━━━━━━━━━━━━</p>
+                                        </div>
+                                        <div class="subTitle">
+                                            <p>低重心設計</p>
+                                        </div>
+                                        <div class="subContent">
+                                            <p>Facebook · 【創造你的AI 分身】 · 【TLdraw 用塗鴉畫出整個網頁】 · 【小鹿AI 週報｜第二十九期】 · 【ChatGPT × Excel 企業內訓】</p>
+                                        </div>
+                                        <div class="subTitle">
+                                            <p>車體剛性強化</p>
+                                        </div>
+                                        <div class="subContent">
+                                            <p>貨幣符號≡emoji. 歐元，美元，美分，英鎊，韓元，中國人民幣和日元。 ... 這些特殊符號是真實的文字和可複製並粘貼到</p>
+                                        </div>
+                                        <div class="subTitle">
+                                            <p>四輪獨立懸吊</p>
+                                        </div>
+                                        <div class="subContent">
+                                            <p>生命靈數是每個人出生時自帶的一組特殊且獨特的數字，是由每個人的西元出生年月日所組成，藉由這組屬於你獨一無二的數字，可以看出你的天生能力優勢</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>       
+                    </section>
+                </body>
+                </html>
