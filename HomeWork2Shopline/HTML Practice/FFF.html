@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list{
+            width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .card{
+            box-sizing: border-box;
+            width: 280px;
+            margin: 10px;
+            border: 1px solid #000;
+            padding: 10px;
+            position: relative;
+        }
+        .card img{
+            width: 100%;
+        }
+        .card .tag{
+            background-color: red;
+            color: #fff;
+            padding: 2px 4px;
+            position: absolute;
+            left: 0px;
+            top: 20px;
+        }
+        .arrow{
+            width: 0px;
+            height: 0px;
+            padding: 2px 4px;
+            position: absolute;
+            left: -11px;
+            top: 26px;
+        }
+        .card .tag::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 0;
+            height: 0;
+            border-top: red 10px solid;
+            border-left: transparent 10px solid;  
+        }
+    </style>
+</head>
+<body>
+    <div class="list"> 
+        <div class="card">
+            
+            <div class="tag">這是你該買的<div class="arrow"></div></div>
+            <img src="https://picsum.photos/300/200/?random=10">
+        <p>你應該要買才對</p>
+        </div>
+        <div class="card">
+            <div class="tag">這是你該買的</div>
+            <img src="https://picsum.photos/300/200/?random=10">
+        <p>你應該要買才對</p>
+        </div>
+        <div class="card">
+            <div class="tag">這是你該買的</div>
+            <img src="https://picsum.photos/300/200/?random=10">
+        <p>你應該要買才對</p>
+        </div>
+        <div class="card">
+            <div class="tag">這是你該買的</div>
+            <img src="https://picsum.photos/300/200/?random=10">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi officia ut laborum excepturi consequuntur, quasi natus et eos odit blanditiis sequi voluptatum fugiat magnam cumque. Nulla harum reprehenderit blanditiis officiis.</p>
+        </div>
+    </div>
+</body>
+</html>

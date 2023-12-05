@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body {
+            font-family: YakuHanJP, sans-serif, serif;
+            line-height: 1.4;
+        }
+
+        section {
+            padding: 96px 0px;
+        }
+
+        .sectionTitle {
+            font: freight-neo-pro, sans-serif;
+            font-size: 24px;
+            padding: 10px 0px 64px;
+            border-top: 2px black solid;
+
+        }
+
+        .containerTitle {
+            display: flex;
+            border-top: 1px lightgray solid;
+            margin: 64px 0px 24px;
+            padding: 20px 0px 30px;
+            justify-content: space-between;
+            align-items: end;
+        }
+
+        h2,
+        h3,
+        p {
+            color: #222;
+        }
+
+        h2 {
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .moreInfo {
+
+            display: inline-block;
+            font-size: 13px;
+            color: #F65936;
+            font-weight: 600;
+        }
+
+        .moreInfo::after {
+            content: '➜';
+            display: inline-block;
+            width: 18px;
+            height: 14px;
+            font-size: 8px;
+            text-align: center;
+            vertical-align: bottom;
+            border: 0.5px solid #f65936;
+            border-radius: 50%;
+            padding-top: 4px;
+            margin: 0px 0px 0px 5px;
+        }
+
+        h3 {
+            font-weight: 600;
+        }
+
+        h2 .jp {
+            font-size: 26px;
+            font-weight: 900;
+        }
+
+        h2 .en {
+            font-size: 14px;
+            padding-left: 24px;
+        }
+
+        .container,
+        .secondContainer {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .wrap:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+
+        /* .spaceBetween {
+            width: 40px;
+        } */
+
+        .SingleItem {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+
+
+        .icon, .iconRight {
+            display: flex;
+            align-items: center;
+            text-align: right;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        .icon img, .iconRight img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .iconRight img{
+            opacity: 0;
+        }
+        
+        .iconRight{
+            color: white;
+
+        }
+        img {
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .textSlogan {
+            display: flex;
+            margin: 20px 0px;
+        }
+
+        .textSlogan h3 {
+            font-size: 24px;
+            width: 140%;
+            margin-right: 30px;
+        }
+
+        .textSlogan>div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .textSlogan p:first-child {
+            font-size: 13px;
+        }
+
+        .date {
+            font-size: 12px;
+        }
+
+        .fourSubItems {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            flex: 1;
+            align-self: flex-end;
+            /* Align to the top of the container */
+        }
+
+        .subitems {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .subitems>div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+
+        .subitems h3 {
+            font-size: 16px;
+            margin: 18px 0px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+
+        <div class="container">
+            <p class="sectionTitle">LATEST</p>
+            <div class="containerTitle">
+                <h2><span class="jp">旅行者にできること</span><span class="en">What Travelers Can Do</span></h2>
+                <a href="https://www.allhawaii.jp/malamahawaii/initiatives/corporate/" class="moreInfo">すべて見る</a>
+            </div>
+            <div class="wrap">
+                <div class="SingleItem">
+                    <span class="icon">
+                        <img src="https://www.allhawaii.jp/malamahawaii/wp-content/themes/malamahawaii/img/common/icon/icon_ocean.svg"
+                            alt="iconImage">海</span>
+
+                    <img src="https://picsum.photos/300/200/?random=10">
+                    <div class="textSlogan">
+                        <h3>11月はサンゴ白化啓発月間 〜日常でできること〜</h3>
+                        <div>
+                            <p>世界のサンゴ礁を救うことを使命としている環境NGO団体コーラル・リーフ・アライアンス（The Coral Reef Alliance）は、2023年11月を「サ </p>
+                            <p class="date">2023.11.09</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="spaceBetween"></div>
+                <div class="fourSubItems">
+                    <div class="subitemsItem">
+                        <span class="icon">
+                            <img src="https://www.allhawaii.jp/malamahawaii/wp-content/themes/malamahawaii/img/common/icon/icon_other.svg"
+                                alt="iconImage">その他</span>
+
+
+                        <img src="https://picsum.photos/300/200/?random=12">
+                        <div>
+                            <h3>マウイ島の山火事救援金受付開始</h3>
+                            <p class="date">2023.08.18</p>
+                        </div>
+                    </div>
+                    <div class="subitemsItem">
+                        <span class="iconRight">
+                            <img src="https://www.allhawaii.jp/malamahawaii/wp-content/themes/malamahawaii/img/common/icon/icon_other.svg"
+                                alt="iconImage">その他</span>
+                        <img src="https://picsum.photos/300/200/?random=13">
+                        <div>
+                            <h3>2023年7月後半～9月にハワイで開催されるカルチャーイベント</h3>
+                            <p class="date">2023.07.20</p>
+                        </div>
+                    </div>
+                    <div class="subitems">
+                        <img src="https://picsum.photos/300/200/?random=14">
+                        <div>
+                            <h3>第46回プリンスロット•フラフェスティバル、7月に開催</h3>
+                            <p class="date">2023.06.22</p>
+                        </div>
+                    </div>
+                    <div class="subitems">
+                        <img src="https://picsum.photos/300/200/?random=15">
+                        <div>
+                            <h3>今年もアースデーにクリーンを開催！</h3>
+                            <p class="date">2023.04.18</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="secondContainer">
+            <div class="containerTitle">
+                <h2><span class="jp">企業の取組み</span><span class="en">Corporate Initiatives</span></h2>
+                <a href="https://www.allhawaii.jp/malamahawaii/initiatives/corporate/" class="moreInfo">すべて見る</a>
+            </div>
+            <div class="wrap">
+                <div class="SingleItem">
+                    <p>ジャルパック</p>
+                    <img src="https://picsum.photos/300/200/?random=16">
+                    <div class="textSlogan">
+                        <h3>【チームJALハワイ】ビーチクリーンアップ活動で地元コミュニティに貢献</h3>
+                        <div>
+                            <p>JALハワイ支店とJALPAK International Hawaiiで構成された“チームJALハワイ”は、ハワイ州観光局が提唱する「マラマハワイ～ハワイを思</p>
+                            <p class="date">2022.11.02</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="spaceBetween"></div>
+                <div class="fourSubItems">
+                    <div class="subitems">
+                        <p>&nbsp;</p>
+                        <img src="https://picsum.photos/300/200/?random=17">
+                        <div>
+                            <h3>廃棄された漁網を服に生まれ変わらせる！海を守ろうと活動する人々が主役のドキュメンタリーを作るプロジェクトをサポートしませんか？</h3>
+                            <p class="date">2022.07.27</p>
+                        </div>
+                    </div>
+                    <div class="subitems">
+                        <p>&nbsp;</p>
+                        <img src="https://picsum.photos/300/200/?random=18">
+                        <div>
+                            <h3>第33回タートル・インディペンデンス・デイ開催</h3>
+                            <p class="date">2022.07.01</p>
+                        </div>
+                    </div>
+                    <div class="subitems">
+                        <img src="https://picsum.photos/300/200/?random=19">
+                        <div>
+                            <h3>「シーアスパラガス」を生産している「オラカイ」のサステナブルな取り組み</h3>
+                            <p class="date">2022.06.15</p>
+                        </div>
+                    </div>
+                    <div class="subitems">
+                        <img src="https://picsum.photos/300/200/?random=20">
+                        <div>
+                            <h3>【ザ・リッツ・カールトン・レジデンス ワイキキビーチ】オアフ島内最大運河、アラワイ運河の浄化プロジェクト「ゲンキ・アラワイ・プロジェクト」の協力パートナーに</h3>
+                            <p class="date">2022.06.14</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
