@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maikon</title>
+    <link rel="stylesheet" href="HomeWork5 Maikon/style.css">
+    <style>
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            background-color: white;
+        }
+        .header{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+        }
+        .outSideBox{
+            width: 1200px;
+            margin: auto;
+        }
+        .logo {
+            align-self: center;
+            width: 250px;
+        }
+        .hyperLink{
+            width: 850px;
+            padding: 10px 6px;
+            color: gray;
+            text-align: end;
+            align-self: center;
+        }
+        .hyperLink a{
+            padding: 10px 0px;
+            margin-left: 2em;
+            transition:  0.3s;
+        }
+        .hyperLink a:hover{
+            border-bottom: gray 1px solid;
+        }
+        .subscribe{
+            width: 200px;
+            justify-self: end;
+            text-align: end;
+        }
+        .subscribe p{
+            display: inline-block;
+            margin-left: auto;
+            border: 1px solid gray;
+            padding: 10px;
+            transition: 0.3s
+        }
+        .subscribe:hover p{
+            background-color: #1fde82;
+            color: white;
+        }
+        .creativity{
+            margin: 50px 0px;
+            display: flex;
+        }
+        .creativity .information{
+            width: 50%;
+        }
+        .creativityImg{
+            width: 50%;
+            position: relative;
+        }
+        .maintitle{
+            font-family: "Roboto", Sans-serif;
+            font-size: 58px;
+            line-height: 1.315em;
+            margin-bottom: -30px;
+        }
+        .content{
+            color: #5d6678;
+            font-size: 14px;
+            line-height: 1.5em;
+            margin-bottom: 30px;
+        }
+        .buttonBOX{
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .specialEffects{
+            border-radius: 5px;
+            background-color: #1fde82;
+            color: white;
+            width: 150px;
+            font-size: 14px;
+            text-align: center;
+            margin-right: 35px;
+            transition: 0.3s;
+        }
+        .specialEffects:hover{
+            background-color: #3b3d42;
+        }
+        .specialEffects2{
+            border: #5d6678 1px solid;
+            width: 150px;
+            font-size: 14px;
+            text-align: center;
+            margin-right: 35px;
+            transition: 0.3s;
+        }
+        .specialEffects2:hover{
+            background-color: #1fde82;
+            color: white;
+        }
+        .creativity .creativityImg::before{
+            content: url("./img/asset 21.svg");
+            position: absolute;
+            top: -10px;
+            left: -80px;
+            z-index: -1;
+        }
+        .creativity .buttonBOX::before{
+            content: url("./img/asset 24.svg");
+            position: absolute;
+            left: -230px;
+            top: 95px;
+        }
+        .passion{
+            margin: 50px 0px;
+            display: flex;
+            position: relative;
+        }
+        .passionBoxImg{
+            width: 55%;
+        }
+        .passion .information .maintitle{
+            font-family: "Roboto", Sans-serif;
+            font-size: 42px;
+            line-height: 1.315em;
+            margin-bottom: -30px;
+        }
+        .passion::after{
+            content: url("./img/asset 23.svg");
+            position: absolute;
+            left: 1050px;
+            top:550px
+        }
+        .services{
+            margin: 50px 0px;
+        }
+        .services .maintitle{
+            font-family: "Roboto", Sans-serif;
+            font-size: 42px;
+            line-height: 1.315em;
+            margin-bottom: 30px;
+        }
+        .services-grid{
+            background-color:#f6f6f6;
+            display: grid;
+            gap: 30px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }   
+        .services-items{
+            box-sizing: border-box;
+            width: 380px;
+            background-color: white;
+            padding: 30px;
+        }
+        .subTitle p {
+            font-size: 22px;
+        }
+        .readMore p{
+            font-size: 16px;
+            color: #3b3d42;
+            transition: 0.3s;
+        }
+        .readMore p:hover{
+            color: #1fde82;
+        }
+        .services-items:nth-of-type(4){
+            position: relative;
+        }
+        .services-items:nth-of-type(4)::before{
+            content: url("./img/asset 24.svg");
+            position: absolute;
+            left: -230px;
+            top: 200px;
+        }
+        .contactUS{
+            display: flex;
+            margin-bottom: 50px;
+        }
+        .contactUSImg img{
+            width: 90%;
+            height: 90%;
+        }
+        .contactUS .information{
+            width: 35%;
+        }
+        .contactUS .maintitle{
+            font-family: "Roboto", Sans-serif;
+            font-size: 42px;
+            font-weight: 300;
+            line-height: 1.31em;
+            letter-spacing: 0.84px;
+            margin-top: 20px;
+        }
+        .contactUS .content{
+            margin-top: 50px;
+        }
+        .blueArea{
+            background-color: #2570ff;
+            padding: 60px 0px;
+        }
+        .whyChooseOur{
+            display: flex;
+        }
+        .data-Area{
+            width: 50%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .data-item{
+            border-radius: 15px;
+            margin: 15px;
+            padding: 50px 15px;
+            width: 240px;
+            background-color: #3f81ff;
+        }
+        .data-content p, .data-title p{
+            margin: 0px;
+        }
+        .data-title{
+            margin-bottom: 30px;
+            margin-left: 10px;
+            font-size: 56px;
+            color: white;
+            font-weight: bold;
+        }
+        .data-content{
+            margin-left: 10px;
+            line-height: 1.5;
+            font-size: 16px;
+            color: white;
+        }
+        .whyBox{
+            margin-left: 80px;
+            position: relative;
+        }
+        .whyTitle{
+            line-height: 1.3;
+            margin-top: 80px;
+            font-size: 42px;
+            color: white;
+        }
+        .whyContent{
+            color: white;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        .whybuttonBOX .specialEffects2{
+            margin-top: 40px;
+            color: white;
+            border: white 1px solid;
+        }
+        .whyBox::after{
+            content: url("./img/asset\ 37.jpg");
+            position: absolute;
+            top: 0;
+            left: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/logo.png">
+            </div>
+            <nav class="hyperLink">
+                <a herf="#" style="border-bottom: gray 1px solid;">Home</a>
+                <a herf="#">About</a>
+                <a herf="#">Services</a>
+                <a herf="#">Team</a>
+                <a herf="#">Case studio</a>
+                <a herf="#">Contacts</a>   
+            </nav>
+            <div class="subscribe">
+                <p>SUBSCRIBE</p>
+            </div>
+        </div>
+    </header>
+    <section class="outSideBox">
+        <section class="creativity">
+            <div class="information">
+                <div class="maintitle">
+                    <p>Our creativity is<br>your success</p>
+                </div>
+                <div class="content">
+                    <p>We break all boundaries if they happen on our way of project’s<br>development!</p>
+                </div>
+                <div class="buttonBOX">
+                    <div class="specialEffects">
+                        <p>LEARN MORE</p>
+                    </div>
+                    <div class="buttonBoxImg">
+                        <img width="140" height="36" src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/play-button.svg" class="attachment-full size-full lazyloaded" alt="" data-lazy-src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/play-button.svg" data-was-processed="true">
+                    </div>
+                </div>
+            </div>
+            <div class="creativityImg">
+                <img width="502" height="456" src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-1.svg" class="attachment-full size-full lazyloaded" alt="" data-lazy-src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-1.svg" data-was-processed="true">
+            </div>
+        </section>
+        <section class="passion">
+            <div class="passionBoxImg">
+                <img width="563" height="509" src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-2.png" class="attachment-full size-full lazyloaded" alt="" data-lazy-srcset="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-2.png 563w, https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-2-300x271.png 300w" data-lazy-sizes="(max-width: 563px) 100vw, 563px" data-lazy-src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-2.png" sizes="(max-width: 563px) 100vw, 563px" srcset="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-2.png 563w, https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-2-300x271.png 300w" data-was-processed="true">
+            </div>
+            <div class="information">
+                <div class="maintitle">
+                    <p>Creative challenges are<br>our passion</p>
+                </div>
+                <div class="content">
+                    <p>Our team of designers and developers work closely together to<br>build a creative and positive working environment. Functionality is<br>as important to us as aesthetics.</p>
+                </div>
+                <div class="buttonBOX">
+                    <div class="specialEffects">
+                        <p>ABOUT US</p>
+                    </div>
+                    <div class="specialEffects2">
+                        <P>CONTANT US</P>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="maintitle">
+                <p>We provide a wide range<br>of creative services</p>
+            </div>
+            <div class="services-grid">
+                <div class="services-items">
+                    <div class="icon">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/icon-1.svg">
+                    </div>
+                    <div class="subTitle">
+                        <p>Web Design & Brending</p>
+                    </div>
+                    <div class="content">
+                        <p>A great brand combines design and conveys<br>company’s value messaging to evoke<br>emotion and drive strategy.
+                        </p>
+                    </div>
+                    <div class="readMore">
+                        <p>READ MORE</p>
+                    </div>
+                </div>
+                <div class="services-items">
+                    <div class="icon">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/icon-2.svg">
+                    </div>
+                    <div class="subTitle">
+                        <p>Graphic Design</p>
+                    </div>
+                    <div class="content">
+                        <p>Rich experience plus unlimited imagination<br>create our successful service discovered by<br>clients.
+                        </p>
+                    </div>
+                    <div class="readMore">
+                        <p>READ MORE</p>
+                    </div>
+                </div>
+                <div class="services-items">
+                    <div class="icon">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/icon-3.svg">
+                    </div>
+                    <div class="subTitle">
+                        <p>Video Production</p>
+                    </div>
+                    <div class="content">
+                        <p>Creating and handling professional video is<br>our strong point. It plays major role in your<br>digital business strategy.
+                        </p>
+                    </div>
+                    <div class="readMore">
+                        <p>READ MORE</p>
+                    </div>
+                </div>
+                <div class="services-items">
+                    <div class="icon">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/icon-4.svg">
+                    </div>
+                    <div class="subTitle">
+                        <p>SEO</p>
+                    </div>
+                    <div class="content">
+                        <p>We provide everything your site needs to<br>perform at it’s highest capabilities on the<br>major search engines.
+                        </p>
+                    </div>
+                    <div class="readMore">
+                        <p>READ MORE</p>
+                    </div>
+                </div>
+                <div class="services-items">
+                    <div class="icon">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/icon-5.svg">
+                    </div>
+                    <div class="subTitle">
+                        <p>Digital Marketing</p>
+                    </div>
+                    <div class="content">
+                        <p>We do collateral design, interactive design,<br>hoarding, signage, presentation centres, and<br>more.
+                        </p>
+                    </div>
+                    <div class="readMore">
+                        <p>READ MORE</p>
+                    </div>
+                </div>
+                <div class="services-items">
+                    <div class="icon">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/icon-6.svg">
+                    </div>
+                    <div class="subTitle">
+                        <p>Infographics</p>
+                    </div>
+                    <div class="content">
+                        <p>Turn your data into captivating artwork that<br>will keep your audience engaged. Our team<br>can help you with it.
+                        </p>
+                    </div>
+                    <div class="readMore">
+                        <p>READ MORE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contactUS">
+            <div class="information">
+                <div class="maintitle">
+                    <p>If you have any<br>questions, please<br>contact us</p>
+                </div>
+                <div class="content">
+                    <p>Our professional support team try to do their best to provide you<br>with high-quality consultations concerning any question about<br>our services.</p>
+                </div>
+                <div class="buttonBOX">
+                    <div class="specialEffects">
+                        <p>CONTACT US</p>
+                    </div>
+                    <div class="specialEffects2">
+                        <p>SUBSCRIBE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactUSImg">
+                <img src="./img/asset 36.jpg">
+            </div>
+        </section>
+    </section>
+    <section class="blueArea">
+        <section class="outSideBox">
+            <div class="whyChooseOur">
+                <div class="data-Area">
+                    <div class="data-item">
+                        <div class="data-title">
+                            <p>1880+</p>
+                        </div>
+                        <div class="data-content">
+                            <p>Completed projects to the end by<br>our specialists.</p>
+                        </div>
+                    </div>
+                    <div class="data-item">
+                        <div class="data-title">
+                            <p>56</p>
+                        </div>
+                        <div class="data-content">
+                            <p>A large team of the best<br>specialists.</p>
+                        </div>
+                    </div>
+                    <div class="data-item">
+                        <div class="data-title">
+                            <p>2000+</p>
+                        </div>
+                        <div class="data-content">
+                            <p>Customers who were satisfied<br>with our work.</p>
+                        </div>
+                    </div>
+                    <div class="data-item">
+                        <div class="data-title">
+                            <p>100%</p>
+                        </div>
+                        <div class="data-content">
+                            <p>Our values are good organization<br>and result orientation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="whyBox">
+                    <div class="whyTitle">
+                        <p>Why choose our<br>studio for your<br>projects?</p>
+                    </div>
+                    <div class="whyContent">
+                        <p>We are a command of professional and enthusiastic<br>people, who like what they do and are always in the<br>process of growing and improving their skills.</p>
+                    </div>
+                    <div class="whybuttonBOX">
+                        <div class="specialEffects2">
+                            <p>ORDER SERVICE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
