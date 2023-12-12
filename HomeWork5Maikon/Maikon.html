@@ -6,6 +6,9 @@
     <title>Maikon</title>
     <link rel="stylesheet" href="HomeWork5 Maikon/style.css">
     <style>
+        a{
+            text-decoration: none;
+        }
         header {
             position: sticky;
             top: 0;
@@ -28,7 +31,6 @@
         .hyperLink{
             width: 850px;
             padding: 10px 6px;
-            color: gray;
             text-align: end;
             align-self: center;
         }
@@ -36,6 +38,7 @@
             padding: 10px 0px;
             margin-left: 2em;
             transition:  0.3s;
+            color: gray;
         }
         .hyperLink a:hover{
             border-bottom: gray 1px solid;
@@ -255,16 +258,383 @@
             font-size: 14px;
             line-height: 1.7;
         }
-        .whybuttonBOX .specialEffects2{
+        .whyButtonBOX .specialEffects2{
             margin-top: 40px;
             color: white;
             border: white 1px solid;
         }
         .whyBox::after{
-            content: url("./img/asset\ 37.jpg");
+            content: url("./img/asset 37.jpg");
             position: absolute;
             top: 0;
-            left: 400px;
+            left: 375px;
+        }
+        .step-works .maintitle p{
+            font-size: 44px;
+        } 
+        .step-works .maintitle{
+            margin: 50px 0px;
+        }
+        .stepBox{
+            display: flex;
+        }
+        .meetingImg{
+            width: 30%;
+            text-align: end;
+        }
+        .meetingNumber{
+            width: 15%;
+            text-align: end;
+            align-self: center;
+            position: relative;
+        }
+        .meetingNumber::before{
+            content: url("./img/asset\ 38.svg");
+            position: absolute;
+            right: 80px;
+            top: 100px;
+            z-index: -1;
+        }
+        .meetingText{
+            position: relative;
+            margin-left: 50px;
+            align-self: center;
+        }
+        .meetingText::after{
+            content: url("./img/asset\ 31.svg");
+            position: absolute;
+            bottom: 50px;
+            left: 630px;
+        }
+        .TextTitle p{
+            font-size: 20px;
+            margin-bottom: 3px;
+        }
+        .textContent p{
+            color: #5d6678;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .analyzeNumber{
+            position: relative;
+            width: 26%;
+            align-self: center;
+            text-align: end;
+        }
+        .analyzeText{
+            margin-left: 30px;
+            align-self: center;
+            width: 30%;
+        }
+        .stepBox:nth-of-type(3){
+            margin-top: 30px;
+        }
+        .analyzeNumber::before{
+            content: url("./img/asset\ 39.svg");
+            position: absolute;
+            top: 100px;
+            left: 260px;
+            z-index: -1;
+        }
+        .analyzeNumber::after{
+            content: url("./img/asset\ 30.svg");
+            position: absolute;
+            top: 50px;
+            left: -155px;
+        }
+        .workHardImg{
+            width: 37%;
+            text-align: end;
+        }
+        .workHardNumber{
+            position: relative;
+            width: 11%;
+            align-self: center;
+            text-align: end;
+        }
+        .workHardText{
+            align-self: center;
+            margin-left: 30px;
+        }
+        .workHardNumber::after{
+            content: url("./img/asset\ 40.svg");
+            position: absolute;
+            right: 50px;
+            top: 100px;
+            z-index: -1;
+        }
+        .againNumber{
+            position: relative;
+            width: 21%;
+            align-self: center;
+            text-align: end;
+        }
+        .againText{
+            margin-left: 50px;
+            align-self: center;
+            width: 35%;
+        }
+        .stepBox:nth-of-type(4){
+            margin-top: 35px;
+        }
+        .againNumber::before{
+            content: url("./img/asset\ 41.svg");
+            position: absolute;
+            top: 100px;
+            left: 220px;
+            z-index: -1;
+        }
+        .finishImg{
+            text-align: end;
+            width: 33%;
+        }
+        .finishNumber{
+            align-self: center;
+            text-align: end;
+            width: 14%;
+            margin-bottom: 100px;
+        }
+        .finishText{
+            margin-left: 50px;
+            align-self: center;
+            width: 35%;
+            margin-bottom: 100px;
+            position: relative;
+        }
+        .finishText::after{
+            content: url("./img/asset\ 29.svg");
+            position: absolute;
+            left: 640px;
+            bottom: 0px;
+        }
+        .stepBox:nth-of-type(5){
+            margin-top: 50px;
+        }
+        .teamsWork{
+            margin-bottom: 80px;
+        }
+        .teamWorkBox{
+            margin: 15px 0px;
+            display: flex;
+            align-items: center;
+        }
+        .teamWorkBox .maintitle{
+            margin: 0%;
+            font-size: 40px;
+            width: 50%;
+            position: relative;
+        }
+        .teamButtonBOX{
+            display: flex;
+            width: 50%;
+        }
+        .teamButtonBOX .specialEffects{
+            margin: 0px;
+            margin-left: auto;
+            width: 150px;
+            font-size: 14px;
+        }
+        .teamWorkBox{
+            gap: 45px;
+        }
+        .teamWorkitem{
+            width: 370px;
+            background-color: rgba(31,222,130,0.98);
+            border-radius: 5px;
+        }
+        .teamWorkText{
+            color: white;
+            font-size: 40px;
+            margin-left: 50px;
+            margin-bottom: 175px;
+        }
+        .teamWorkHref{
+            margin-bottom: 75px;
+        }
+        .teamWorkHref a{
+            margin-left: 50px;
+            color: white;
+        }
+        .teamWorkImgBox{
+            position: absolute;
+        }
+        .teamWorkImgBox img:hover{
+            transition:  0.3s;
+            opacity: 0.05;
+        }
+        .teamWorkBox .maintitle::before{
+            content: url("./img/asset\ 32.svg");
+            position: absolute;
+            z-index: -1;
+            left :-150px;
+            top: 150px;
+        }
+        .signUp{
+            margin-top: 250px;
+            margin-bottom: 100px;
+            display: flex;
+        }
+        .signUpImg{
+            width: 50%;
+            text-align: center;
+        }
+        .signUpTable{
+            margin-left: 90px;
+            width: 345px;
+            padding: 30px;
+        }
+        .signUpTitle{
+            font-size: 42px;
+        }
+        #name , #email{
+            height: 30px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        #message{
+            margin-bottom: 20px;
+        }
+        .signUp .specialEffects{
+            width: 100px;
+            display: flex;
+        }
+        .signUp .signUpTable .specialEffects p{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .learnMore{
+            margin-top: 150px;
+            margin-bottom: 80px;
+        }
+        .learnMoreTitle{
+            font-size: 42px;
+            text-align: center;
+            position: relative;
+        }
+        .emailAndSubscribe{
+            display: flex;
+            
+        }
+        #yourEmail{
+            height: 38px;
+            width: 400px;
+        }
+        .learnMoreByEmail{
+            margin-left: auto;
+            margin-right: 5px;
+            text-align: center;
+            position: relative;
+        }
+        .emailAndSubscribe .specialEffects{
+            margin-right: auto;
+            width: 100px;
+        }
+        .learnMoreTitle::before{
+            content: url("./img/asset\ 35.svg");
+            position: absolute;
+            left: -150px;
+        }
+        .learnMoreByEmail::after{
+            content: url("./img/asset\ 34.svg");
+            position: absolute;
+            left: 800px;
+            bottom: 50px;
+        }
+        .buttom{
+            display: flex;
+            margin-top: 175px;
+            margin-bottom: 100px;
+        }
+        .buttomBox{
+            width: 300px;
+        }
+        .logo{
+            margin-bottom: 20px
+        }
+        .logoSubtitle{
+            height: 30px;
+        }
+        .logoSubtitle a{
+            display: flex;
+        }
+        .greenWords{
+            margin-right: 5px;
+            color: #1fde82;
+        }
+        .graywords{
+            color: #1d273b;
+        }
+        .buttomTitle{
+            margin-bottom: 30px;
+        }
+        .buttomTitle p{
+            color: #1d273b;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .Networks{
+            color: #5d6678;
+            line-height: 1.7;
+        }
+        .grayBeGreen{
+            color: #5d6678;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .grayBeGreen:hover{
+            color: #1fde82;
+        }
+        .iconArea{
+            display: flex;
+            margin-top: 20px;
+        }
+        .iconArea a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #d3d3d3;
+            border-radius: 50%;
+            width: 36px; 
+            height: 36px;
+            margin-left: 10px;
+            transition: 0.3s;
+        }
+        .iconArea a svg {
+            width: 20px; 
+            height: 20px;
+            
+        }
+        .iconArea a:hover{
+            background-color: #1fde82;
+        }
+        .iconArea a:hover svg path {
+            fill: white;
+        }
+        .footer{
+            display: flex;
+            color: #5d6678;
+            font-size: 12px;
+        }
+        .copyright{
+            width: 50%;
+        }
+        .GreenBeGray{
+            margin-left: 10px;
+            color: #1fde82;
+            transition: 0.3s;
+        }
+        .GreenBeGray:hover{
+            color: #5d6678;
+        }
+        .policyFAQ{
+            margin-left: auto;
+            display: flex;
+        }
+        .policy{
+            margin-right: 50px;
+        }
+        .policyFAQ a p{
+            font-size: 12px;
         }
     </style>
 </head>
@@ -275,12 +645,12 @@
                 <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/logo.png">
             </div>
             <nav class="hyperLink">
-                <a herf="#" style="border-bottom: gray 1px solid;">Home</a>
-                <a herf="#">About</a>
-                <a herf="#">Services</a>
-                <a herf="#">Team</a>
-                <a herf="#">Case studio</a>
-                <a herf="#">Contacts</a>   
+                <a href ="#" style="border-bottom: gray 1px solid;">Home</a>
+                <a href ="#">About</a>
+                <a href ="#">Services</a>
+                <a href ="#">Team</a>
+                <a href ="#">Case studio</a>
+                <a href ="#">Contacts</a>   
             </nav>
             <div class="subscribe">
                 <p>SUBSCRIBE</p>
@@ -493,7 +863,7 @@
                     <div class="whyContent">
                         <p>We are a command of professional and enthusiastic<br>people, who like what they do and are always in the<br>process of growing and improving their skills.</p>
                     </div>
-                    <div class="whybuttonBOX">
+                    <div class="whyButtonBOX">
                         <div class="specialEffects2">
                             <p>ORDER SERVICE</p>
                         </div>
@@ -501,6 +871,286 @@
                 </div>
             </div>
         </section>
+    </section>
+    <section class="outSideBox">
+        <section class="step-works">
+            <div class="maintitle">
+                <p>Steps of our work</p>
+            </div>
+            <div class="sequenceOfSteps">
+                <div class="stepBox">
+                    <div class="meetingImg">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-4.svg">
+                    </div>
+                    <div class="meetingNumber">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/number-01.svg">
+                    </div>
+                    <div class="meetingText">
+                        <div class="TextTitle">
+                            <p>Meeting With The Customer</p>
+                        </div>
+                        <div class="textContent">
+                            <p>The first meeting is very import to form contact and discuss<br>the main ideas of the project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stepBox">
+                    <div class="analyzeNumber">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/number-02.svg">
+                    </div>
+                    <div class="analyzeText">
+                        <div class="TextTitle">
+                            <p>We Consider And Analyze<br>The Work Plan</p>
+                        </div>
+                        <div class="textContent">
+                            <p>When we understand the main eideas, we proceed to<br>discussing the work plan and analyzing it.</p>
+                        </div>
+                    </div>
+                    <div class="analyzeImg">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-5.svg">
+                    </div>
+                </div>
+                <div class="stepBox">
+                    <div class="workHardImg">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-6.svg">
+                    </div>
+                    <div class="workHardNumber">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/number-03.svg">
+                    </div>
+                    <div class="workHardText">
+                        <div class="TextTitle">
+                            <p>Work Hard On The Project</p>
+                        </div>
+                        <div class="textContent">
+                            <p>Our professional team start to handle with your project and<br>embody the conception of the project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stepBox">
+                    <div class="againNumber">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/number-04.svg">
+                    </div>
+                    <div class="againText">
+                        <div class="TextTitle">
+                            <p>Once Again We Analyze And<br>Check Everything</p>
+                        </div>
+                        <div class="textContent">
+                            <p>We meet, analyze and check the done work and make needed<br>corrections.</p>
+                        </div>
+                    </div>
+                    <div class="againImg">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-7.svg">
+                    </div>
+                </div>
+                <div class="stepBox">
+                    <div class="finishImg">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-8.svg">
+                    </div>
+                    <div class="finishNumber">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/number-05.svg">
+                    </div>
+                    <div class="finishText">
+                        <div class="TextTitle">
+                            <p>We Finish The Work And Give<br>It To The Customer</p>
+                        </div>
+                        <div class="textContent">
+                            <p>The project is ready and we give it to the customer. Also we<br>ask for the feedback from the customer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="teamsWork">
+            <div class="teamWorkBox">
+                <div class="maintitle">
+                    <p>Our team's work with<br>Projects</p>
+                </div>
+                <div class="teamButtonBOX">
+                    <div class="specialEffects">
+                        <p>ALL PROJECTS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="teamWorkBox">
+                <div class="teamWorkitem">
+                    <div class="teamWorkImgBox">
+                        <img src="./img/asset 42.jpg">
+                    </div>
+                    <div class="teamWorkText">
+                        <p>Minimal Creative<br>"Impuls"</p>
+                    </div>
+                    <div class="teamWorkHref">
+                        <a href="#">VIEW SITE</a>
+                    </div>
+                </div>
+                <div class="teamWorkitem">
+                    <div class="teamWorkImgBox">
+                        <img src="./img/asset 43.jpg">
+                    </div>
+                    <div class="teamWorkText">
+                        <p>Travel Company<br>"Tour Up"</p>
+                    </div>
+                    <div class="teamWorkHref">
+                        <a href="#">VIEW SITE</a>
+                    </div>
+                </div>
+                <div class="teamWorkitem">
+                    <div class="teamWorkImgBox">
+                        <img src="./img/asset 44.jpg">
+                    </div>
+                    <div class="teamWorkText">
+                        <p>Restaurant Pizzae<br>"Little Italy"</p>
+                    </div>
+                    <div class="teamWorkHref">
+                        <a href="#">VIEW SITE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="signUp">
+            <div class="signUpImg">
+                <img width="499" height="550" src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-9.svg" class="attachment-full size-full lazyloaded" alt="" data-lazy-src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/home-image-9.svg" data-was-processed="true">
+            </div>
+            <div class="signUpTable">
+                <div class="signUpTitle">
+                    <p>Sign up for our<br>consultation</p>
+                </div>
+                <div class="inputInformation">
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="inputInformation">
+                    <input type="text" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <textarea id="message" cols="45" rows="6" placeholder="Message  "></textarea>
+                </div>
+                <div class="specialEffects">
+                    <p>SEND</p>
+                </div>
+            </div>
+        </section>
+        <section class="learnMore">
+            <div class="learnMoreTitle">
+                <p>Subscribe to our news<br>and learn more</p>
+            </div>
+            <div class="emailAndSubscribe">
+                <div class="learnMoreByEmail">
+                    <input type="text" id="yourEmail" placeholder="Your email">
+                </div>
+                <div class="specialEffects">
+                    <p>SUBSCRIBE</p>
+                </div>
+            </div>
+        </section>
+        <section class="buttom">
+            <div class="buttomBox">
+                <div class="logo">
+                    <a href="">
+                        <img src="https://ld-wp73.template-help.com/monstroid2/skins/maikon/wp-content/uploads/2018/11/logo.png">
+                    </a>
+                </div>
+                <div class="logoSubtitle">
+                    <a href="#">
+                        <p class="greenWords">Phone:</p>
+                        <p class="graywords">+ 1 (045) - 224 - 12 - 67</p>
+                    </a>
+                </div>
+                <div class="logoSubtitle">
+                    <a><p class="greenWords">Mail:</p><p class="graywords">info@demolink.org</p></a>
+                </div>
+            </div>
+            <div class="buttomBox">
+                <div class="buttomTitle">
+                    <p>Services</p>
+                </div>
+                <div class="buttomContent">
+                    <nav>
+                        <a href="#">
+                            <p class="grayBeGreen">Web design & brending</p>
+                        </a>
+                        <a href="#">
+                            <p class="grayBeGreen">Web development</p>
+                        </a>
+                        <a href="#">
+                            <p class="grayBeGreen">Full Optimization</p>
+                        </a>
+                        <a href="#">
+                            <p class="grayBeGreen">Research & Strategy</p>
+                        </a>
+                        <a href="#">
+                            <p class="grayBeGreen">Management & Marketing</p>
+                        </a>
+                        <a href="#">
+                            <p class="grayBeGreen">Free support</p>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="buttomBox">
+                <div class="buttomTitle">
+                    <p>About Company</p>
+                </div>
+                <div class="buttomContent">
+                    <nav>
+                        <a href="#">
+                            <p class="grayBeGreen">About us</p>
+                        </a>
+                        <a href="#">
+                            <p class="grayBeGreen">Team</p>
+                        </a>
+                        <a href="#">
+                            <p class="grayBeGreen">Case studio</p>
+                        </a>
+                        <a href="#">
+                            <p class="grayBeGreen">Contacts</p>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="buttomBox">
+                <div class="buttomTitle">
+                    <p>Our Social Networks</p>
+                </div>
+                <div class="Networks">
+                    Join us in the social networks and keep<br>up on the latest news.
+                </div>
+                <div class="iconArea">
+                    <a href="#" class="youtube">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 24 24">
+                            <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,14.598V9.402c0-0.385,0.417-0.625,0.75-0.433l4.5,2.598c0.333,0.192,0.333,0.674,0,0.866l-4.5,2.598 C10.417,15.224,10,14.983,10,14.598z" fill="#d3d3d3"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 30 30">
+                            <path d="M12,27V15H8v-4h4V8.852C12,4.785,13.981,3,17.361,3c1.619,0,2.475,0.12,2.88,0.175V7h-2.305C16.501,7,16,7.757,16,9.291V11 h4.205l-0.571,4H16v12H12z" fill="#d3d3d3"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 24 24">
+                            <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z" fill="#d3d3d3"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 24 24">
+                            <path d="M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z" fill="#d3d3d3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="copyright">
+                <p>Copyright © 2018 Wordpress Maikon. All Rights Reserved. | Theme design by <a href="#" class="GreenBeGray">Zemez</a></p>
+            </div>
+            <div class="policyFAQ">
+                <div class="policy">
+                    <a href="#" ><p class="grayBeGreen">Privacy & Policy</p></a>
+                </div>
+                <div class="FAQ">
+                    <a href="#" ><p class="grayBeGreen">FAQ</p></a>
+                </div>
+            </div>
+        </footer>
     </section>
 </body>
 </html>
