@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuessGame</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+
+        font-family: Microsoft JhengHei,Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+        background-image: 
+                  linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+        background-size: cover;
+      }
+
+      .langButton{
+        position: absolute;
+        top: 10%;
+        left: 70%;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .btnGroup {
+        margin: 10px;
+      }
+      .btnGroup {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        background-color: rgb(192, 255, 217);
+        border-radius: 50%;
+      }
+
+      .btnGroup:hover {
+        background-color: rgb(0, 128, 102);
+        border-radius: 50%;
+        color: aliceblue;
+      }
+      .lang-btn{
+        height: 50px;
+        line-height: 1.1;
+        width: 100px;
+      }
+
+      input {
+        padding: 8px;
+        font-size: 16px;
+        margin-right: 8px;
+        text-align: center;
+      }
+
+      #result {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      #feedback {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="langButton">
+      <button onclick="switchLanguage('en')" class="lang-btn">English</button>
+      <button onclick="switchLanguage('zh')" class="lang-btn">中文</button>
+      <button onclick="switchLanguage('jp')" class="lang-btn">日本語</button>
+    </div>
+    <div id="game-container">
+      <h1 id="game-title">猜數字遊戲</h1>
+      <div>
+
+        <input type="button" class="btnGroup" value="1" />
+        <input type="button" class="btnGroup" value="2" />
+        <input type="button" class="btnGroup" value="3" />
+        <input type="button" class="btnGroup" value="4" />
+        <input type="button" class="btnGroup" value="5" />
+        <input type="button" class="btnGroup" value="6" />
+        <input type="button" class="btnGroup" value="7" />
+        <input type="button" class="btnGroup" value="8" />
+        <input type="button" class="btnGroup" value="9" />
+        <input type="button" class="btnGroup" value="0" />
+      </div>
+
+      <input type="text" id="guess-input" readonly value="" />
+      <input type="button" id="confirm" value="確認" />
+      <input type="button" id="clear" value="清除" onclick="clearInput(this)"/>
+      <p id="result"s>Fighting</p>
+      <p class="highlight">請輸入1 ~ 100之間的數字</p>
+
+    </div>
+
+    <script>
+      let minNumber= 1;
+      let maxNumber=100;
+      let randomNumber = Math.floor(Math.random()*100)+1;
+
+      let confirmButton = document.getElementById("confirm")
+      let clearButton = document.getElementById("clear")
+      let guessNumber = document.getElementById("guess-input");
+      let numberInput = document.querySelectorAll(".btnGroup");
+      let text = document.querySelector(".highlight");
+      var currentLanguage = 'zh';
+
+      function switchLanguage(language) {
+        currentLanguage = language;
+        updateTitleLanguage();
+        updateTextLanguage();
+        updateButtonLanguage();
+      }
+
+      function updateTitleLanguage() {
+        let h1Element = document.getElementById("game-title");
+        switch (currentLanguage) {
+          case 'en':
+            h1Element.innerText = 'Guess the Number Game';
+            break;
+          case 'zh':
+            h1Element.innerText = '猜數字遊戲';
+            break;
+          case 'jp':
+            h1Element.innerText = '数字当てゲーム';
+            break;
+        }
+      }
+      function updateTextLanguage(){
+        switch (currentLanguage) {
+          case 'en':
+            text.innerText = `Please enter a number between ${minNumber} ~ ${maxNumber}`;
+            break;
+          case 'zh':
+            text.innerText = `請輸入 ${minNumber} ~ ${maxNumber} 之間的數字`;
+            break;
+          case 'jp':
+            text.innerText = `数字 ${minNumber} ~ ${maxNumber} で入力してください`;
+            break;
+        }
+      }
+      function updateButtonLanguage(){
+        switch (currentLanguage) {
+          case 'en':
+            confirmButton.value="Confirm"
+            clearButton.value="Clear"
+            break;
+          case 'zh':
+            confirmButton.value="確認"
+            clearButton.value="清除"
+            break;
+          case 'jp':
+            confirmButton.value="確認"
+            clearButton.value="消去"
+            break;
+        }
+      }
+      numberInput.forEach(function(button){
+        button.addEventListener("click",function(e){
+          if(parseInt(guessNumber.value) === 0 && button.value === '0'){
+            return;
+          }
+          if(parseInt(guessNumber.value) === 0 && button.value !== '0'){
+            guessNumber.value='';
+          }
+          guessNumber.value += button.value;
+          if (parseInt(guessNumber.value) > 100) {
+            if (currentLanguage === 'en') {
+              alert("Your input number have exceeded the limit");
+            } else if (currentLanguage === 'zh') {
+              alert("你輸入已經超出範圍");
+            } else if (currentLanguage === 'jp') {
+              alert("入力の数字は範囲を超えています");
+            }
+              guessNumber.value='';
+          }
+        })
+      })
+      
+      function clearInput(element) {
+        guessNumber.value='';
+      }
+      
+      confirmButton.addEventListener("click",function(){
+        if(guessNumber.value==randomNumber){
+          if (currentLanguage === 'en') {
+            alert(`Congratulations, the answer is Number${randomNumber}`);
+          } else if (currentLanguage === 'zh') {
+            alert(`你答對了答案就是${randomNumber}`)
+          } else if (currentLanguage === 'jp') {
+            alert(`正解です、答えは数字${randomNumber}です`);
+          }
+        }
+        else{
+          if (currentLanguage === 'en') {
+            alert("Unfortunately, you answered incorrectly. Please enter again");
+          } else if (currentLanguage === 'zh') {
+            alert(`可惜你答錯，請再輸入一次`)
+          } else if (currentLanguage === 'jp') {
+            alert(`ハズレ～もう一度試してみてください`);
+          }
+          const guessValue = parseInt(guessNumber.value);
+          
+
+          if (maxNumber >= guessValue && guessValue >= randomNumber) {
+          maxNumber = guessValue;
+          }
+
+          if (randomNumber > guessValue && guessValue >= minNumber) {
+            minNumber = guessValue;
+          }
+          switch (currentLanguage) {
+          case 'en':
+            text.innerText = `Please enter a number between ${minNumber} ~ ${maxNumber}`;
+            break;
+          case 'zh':
+            text.innerText = `請輸入 ${minNumber} ~ ${maxNumber} 之間的數字`;
+            break;
+          case 'jp':
+            text.innerText = `数字 ${minNumber} ~ ${maxNumber} で入力してください`;
+            break;
+          }
+          guessNumber.value='';
+        }
+      })
+    </script>
+  </body>
+</html>
