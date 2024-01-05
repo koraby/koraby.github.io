@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+<!--上面是重製-->
+
+.calendar {
+	
+	margin: auto;
+	padding: 20px;
+
+}
+.calendar-header{
+	text-align: center;
+	font-size: 25px;
+	padding: 10px;
+	
+}
+.year-picker{
+	justify-content: center;
+	display: flex;
+	align-self: center;
+}
+.year-change{
+	width: 200px;
+	display: grid;
+	place-items: center;
+	margin: 0 40%;
+	cursor: pointer;
+}
+.month-picker{
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	font-size: 20px;
+	margin:20px
+}
+.calendar-week{
+	height: 50px;
+	display: flex;
+	background-color: #deb887;
+	margin: 30px 4.5% 0px;
+}
+.calendar-week div{
+	width: 13%;
+	margin: auto;
+	text-align: center;
+	height: 50px;
+	line-height: 50px
+}
+.calendar-days{
+	margin: 0px 4.5%;
+	display: grid;
+	grid-template-columns: repeat(7,1fr);
+	font-size: 25px;
+}
+.calendar-day{
+	border:  1px solid rgb(215, 215, 215);;
+	box-sizing: border-box;
+	height: 130px;
+}
+.calendar-days div.cur-date  {
+	background-color: #FFDCB9;
+}
+.calendar-day:hover .numberBox{
+	background-color:  #1473df;
+}
+.previous-month-day{
+	color: rgb(209, 209, 209);
+	border:  1px solid rgb(215, 215, 215);;
+	box-sizing: border-box;
+	height: 130px;
+}
+
+.month-list{
+	position: absolute;
+	background-color: white;
+	border: 1px solid black;
+	top: 18%;
+	text-align: center;
+	left: 45.3%;
+	font-size: 20px;
+	padding: 20px;
+	transform: 20px;
+	visibility: hidden;
+	cursor: pointer;
+}
+.month-list div:hover{
+	background-color: yellow;
+}
+.month-list.show{
+	transform: scale(1);
+	visibility: visible;
+	pointer-events: visible;
+	transform: all 0.2s ease-in-out;
+}
+.clear {
+    text-align: center;
+}
+
+.clear button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto; /* 设置左右外边距为auto，实现水平居中 */
+}
+
+.clear button:hover {
+    background-color: #0056b3;
+}
