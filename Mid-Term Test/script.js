@@ -123,11 +123,13 @@ function updateCheckState(index,checkState) {
     localStorage.setItem('todoKey', JSON.stringify(updatedTodoData));
 }
 
-function updateEditText(index, newText) {
+function updateEditText(index, newContent) {
     const todoData = getTodoFromStorage();
     const updatedTodoData = todoData.map(todo => {
-        todo.index === index
-            return { ...todo, input: newText };
+        if (todo.index === index) {
+            return { ...todo, input: newContent };
+        }
+        return todo;
     });
     localStorage.setItem('todoKey', JSON.stringify(updatedTodoData));
 }
@@ -145,10 +147,3 @@ function storageNewList(){
     storageData.push(newToDo)
     saveToLocalStorage(storageData)
 }
-
-// const CompleteSpan =document.createElement('span')
-// CompleteSpan.innerHTML = `Complete time:<br>${year}-${month}-${date}`
-// if(!checkState){
-//     CompleteSpan.style.display = "none"
-// }
-// ListItem.appendChild(CompleteSpan)
