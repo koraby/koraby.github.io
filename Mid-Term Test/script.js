@@ -114,9 +114,11 @@ function removeFromLocalStorage(inputText) {
 function updateCheckState(index,checkState) {
     const todoData = getTodoFromStorage();
     const updatedTodoData = todoData.map(todo => {
-        todo.index === index
+        if (todo.index === index) {
             let updatedInput = checkState ? todo.input + nowDate : todo.input.substring(0, todo.input.length - 25);
             return { ...todo, checkBox: checkState, input: updatedInput };
+        }
+        return todo;
     });
     localStorage.setItem('todoKey', JSON.stringify(updatedTodoData));
 }
