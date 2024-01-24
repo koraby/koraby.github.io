@@ -5,11 +5,14 @@ let now = new Date();
 let year = now.getFullYear();
 let month = (now.getMonth() + 1).toString().padStart(2, "0");
 let date = now.getDate().toString().padStart(2, "0");
-const nowDate = `\tComplete time:${year}-${month}-${date}`
+const nowDate = `---Complete time:${year}-${month}-${date}`
 
 addButton.addEventListener("click",()=>{
+    if(addListInput.value.trim()==""){
+        return
+    }
     const index = Date.now();
-    appendList(addListInput.value,checkState=false,index)
+    appendList(addListInput.value.trim(),checkState=false,index)
     addListInput.value = ""
     storageNewList(index)
 })
@@ -49,7 +52,7 @@ function appendList(inputText,checkState,index){
             input.disabled  = true
             updateCheckState(index, true );
         } else {
-            input.value = input.value.substring(0, input.value.length - 25); 
+            input.value = input.value.substring(0, input.value.length - 27); 
             editButton.style.display = "block"
             updateCheckState(index, false);
         }
@@ -115,7 +118,7 @@ function updateCheckState(index,checkState) {
     const todoData = getTodoFromStorage();
     const updatedTodoData = todoData.map(todo => {
         if (todo.index === index) {
-            let updatedInput = checkState ? todo.input + nowDate : todo.input.substring(0, todo.input.length - 25);
+            let updatedInput = checkState ? todo.input + nowDate : todo.input.substring(0, todo.input.length - 2);
             return { ...todo, checkBox: checkState, input: updatedInput };
         }
         return todo;
