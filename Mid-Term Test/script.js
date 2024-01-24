@@ -11,7 +11,7 @@ addButton.addEventListener("click",()=>{
     const index = Date.now();
     appendList(addListInput.value,checkState=false,index)
     addListInput.value = ""
-    storageNewList()
+    storageNewList(index)
 })
 
 window.onload = function () {
@@ -83,7 +83,7 @@ function appendList(inputText,checkState,index){
     deleteButton.textContent = 'Remove';
     deleteButton.addEventListener('click', function () {
         listItem.remove()
-        removeFromLocalStorage(inputText)
+        removeFromLocalStorage(index)
     });
 
         checkBoxDiv.appendChild(checkBox)
@@ -105,9 +105,9 @@ function getTodoFromStorage(){
     return Array.isArray(todoData) ? todoData : [];
 }
 
-function removeFromLocalStorage(inputText) {
+function removeFromLocalStorage(index) {
     const todoData = getTodoFromStorage();
-    const updatedTodoData = todoData.filter(todo => todo.input !== inputText);
+    const updatedTodoData = todoData.filter(todo => todo.index !== index);
     localStorage.setItem('todoKey', JSON.stringify(updatedTodoData));
 }
 
@@ -134,13 +134,13 @@ function updateEditText(index, newContent) {
     localStorage.setItem('todoKey', JSON.stringify(updatedTodoData));
 }
 
-function storageNewList(){
+function storageNewList(id){
     const newCheckbox = document.querySelector('.ListItem:last-of-type .checkBoxClass').checked
     const newEventInput = document.querySelector('.ListItem:last-of-type .inputClass').value
     const index = Date.now();
     let storageData = getTodoFromStorage()
     let newToDo = {
-        "index":index,
+        "index":id,
         "input": newEventInput,
         "checkBox": newCheckbox
     }   
