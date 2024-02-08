@@ -95,7 +95,6 @@
       <input type="text" id="guess-input" readonly value="" />
       <input type="button" id="confirm" value="確認" />
       <input type="button" id="clear" value="清除" onclick="clearInput(this)"/>
-      <p id="result"s>Fighting</p>
       <p class="highlight">請輸入1 ~ 100之間的數字</p>
 
     </div>
@@ -110,7 +109,7 @@
       let guessNumber = document.getElementById("guess-input");
       let numberInput = document.querySelectorAll(".btnGroup");
       let text = document.querySelector(".highlight");
-      var currentLanguage = 'en';
+      var currentLanguage = "en";
 
       function switchLanguage(language) {
         currentLanguage = language;
@@ -122,13 +121,13 @@
       function updateTitleLanguage() {
         let h1Element = document.getElementById("game-title");
         switch (currentLanguage) {
-          case 'en':
+          case "en":
             h1Element.innerText = 'Guess the Number Game';
             break;
-          case 'zh':
+          case "zh":
             h1Element.innerText = '猜數字遊戲';
             break;
-          case 'jp':
+          case "jp":
             h1Element.innerText = '数字当てゲーム';
             break;
         }
