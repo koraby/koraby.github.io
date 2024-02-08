@@ -77,7 +77,7 @@
       <button onclick="switchLanguage('jp')" class="lang-btn">日本語</button>
     </div>
     <div id="game-container">
-      <h1 id="game-title">猜數字遊戲</h1>
+      <h1 id="game-title">Guess the Number Game</h1>
       <div>
 
         <input type="button" class="btnGroup" value="1" />
@@ -95,7 +95,7 @@
       <input type="text" id="guess-input" readonly value="" />
       <input type="button" id="confirm" value="確認" />
       <input type="button" id="clear" value="清除" onclick="clearInput(this)"/>
-      <p class="highlight">請輸入1 ~ 100之間的數字</p>
+      <p class="highlight">Please enter a number between 1 ~ 100</p>
 
     </div>
 
@@ -109,7 +109,7 @@
       let guessNumber = document.getElementById("guess-input");
       let numberInput = document.querySelectorAll(".btnGroup");
       let text = document.querySelector(".highlight");
-      var currentLanguage = "en";
+      var currentLanguage = 'en';
 
       function switchLanguage(language) {
         currentLanguage = language;
@@ -134,28 +134,28 @@
       }
       function updateTextLanguage(){
         switch (currentLanguage) {
-          case 'en':
+          case "en":
             text.innerText = `Please enter a number between ${minNumber} ~ ${maxNumber}`;
             break;
-          case 'zh':
+          case "zh":
             text.innerText = `請輸入 ${minNumber} ~ ${maxNumber} 之間的數字`;
             break;
-          case 'jp':
+          case "jp":
             text.innerText = `数字 ${minNumber} ~ ${maxNumber} で入力してください`;
             break;
         }
       }
       function updateButtonLanguage(){
         switch (currentLanguage) {
-          case 'en':
+          case "en":
             confirmButton.value="Confirm"
             clearButton.value="Clear"
             break;
-          case 'zh':
+          case "zh":
             confirmButton.value="確認"
             clearButton.value="清除"
             break;
-          case 'jp':
+          case "jp":
             confirmButton.value="確認"
             clearButton.value="消去"
             break;
@@ -171,11 +171,11 @@
           }
           guessNumber.value += button.value;
           if (parseInt(guessNumber.value) > 100) {
-            if (currentLanguage === 'en') {
+            if (currentLanguage === "en") {
               alert("Your input number have exceeded the limit");
-            } else if (currentLanguage === 'zh') {
+            } else if (currentLanguage === "zh") {
               alert("你輸入已經超出範圍");
-            } else if (currentLanguage === 'jp') {
+            } else if (currentLanguage === "jp") {
               alert("入力の数字は範囲を超えています");
             }
               guessNumber.value='';
@@ -189,20 +189,20 @@
       
       confirmButton.addEventListener("click",function(){
         if(guessNumber.value==randomNumber){
-          if (currentLanguage === 'en') {
+          if (currentLanguage === "en") {
             alert(`Congratulations, the answer is Number${randomNumber}`);
-          } else if (currentLanguage === 'zh') {
+          } else if (currentLanguage === "zh") {
             alert(`你答對了答案就是${randomNumber}`)
-          } else if (currentLanguage === 'jp') {
+          } else if (currentLanguage === "jp") {
             alert(`正解です、答えは数字${randomNumber}です`);
           }
         }
         else{
-          if (currentLanguage === 'en') {
+          if (currentLanguage === "en") {
             alert("Unfortunately, you answered incorrectly. Please enter again");
-          } else if (currentLanguage === 'zh') {
+          } else if (currentLanguage === "zh") {
             alert(`可惜你答錯，請再輸入一次`)
-          } else if (currentLanguage === 'jp') {
+          } else if (currentLanguage === "jp") {
             alert(`ハズレ～もう一度試してみてください`);
           }
           const guessValue = parseInt(guessNumber.value);
@@ -216,13 +216,13 @@
             minNumber = guessValue;
           }
           switch (currentLanguage) {
-          case 'en':
+          case "en":
             text.innerText = `Please enter a number between ${minNumber} ~ ${maxNumber}`;
             break;
-          case 'zh':
+          case "zh":
             text.innerText = `請輸入 ${minNumber} ~ ${maxNumber} 之間的數字`;
             break;
-          case 'jp':
+          case "jp":
             text.innerText = `数字 ${minNumber} ~ ${maxNumber} で入力してください`;
             break;
           }
