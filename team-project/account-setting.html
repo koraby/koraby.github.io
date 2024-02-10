@@ -6,19 +6,6 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-        @media screen and (max-width:768px) {
-            .content-box{
-                display: none;
-            }
-            .footer{
-                display: none;
-            }
-        }
-        @media screen and (min-width:769px) {
-            .phone-content-box{
-                display: none;
-            }
-        }
         .content-box{
             max-width: 1000px;
             margin: auto;
@@ -78,6 +65,9 @@
             font-size: 12px;
             text-decoration: underline;
         }
+
+        /*以上是網頁內容以下是footer設定*/
+
         .footer{
             border-top: 1px solid #DDDDDD;
             background-color: #F7F7F7;
@@ -228,6 +218,20 @@
         .phone-copyright{
             font-size: 12px;
             text-align: center;
+        }
+        /*media設定*/
+        @media screen and (max-width:768px) {
+            .content-box{
+                display: none;
+            }
+            .footer{
+                display: none;
+            }
+        }
+        @media screen and (min-width:769px) {
+            .phone-content-box{
+                display: none;
+            }
         }
     </style>
 </head>
