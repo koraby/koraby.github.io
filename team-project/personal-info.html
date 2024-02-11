@@ -7,10 +7,24 @@
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
+        .weight600{
+            font-weight: 600;
+        }
+        .href{
+            color: black;
+            text-decoration: none;
+        }
+        .href-hover:hover{
+            text-decoration: underline;
+        }
         .personal-content-box{
-            max-width: 1050px;
+            max-width: 1100px;
             margin: auto;
-            padding: 0px 20px;
+            padding: 0px 24px;
+        }
+        .personal-title-h1{
+            font-size: 32px;
+            font-weight: 800;
         }
         .personal-title nav i{
             padding: 0px 16px;
@@ -29,7 +43,6 @@
             border: 0;
             width: 40px;
             background-color: white;
-            font-weight: 600;
             font-size: 14px;
             text-decoration: underline;
             margin-left: 8px;
@@ -39,6 +52,7 @@
         }
         .trouble-shooting-border{
             border: solid 1px #DDDDDD;
+            border-radius: 12px;
         }
         .trouble-shooting-icon i{
             color: pink;
@@ -67,7 +81,10 @@
         .save-btn{
             padding: 14px 24px;
             margin-bottom: 24px;
-            font-weight: 600;
+        }
+        .phone-personal-title h1{
+            font-size: 22px;
+            font-weight: 800;
         }
 
         /*以上是網頁內容以下是footer設定*/
@@ -86,13 +103,6 @@
             flex-direction: column;
             width: 33.333333%;
             padding: 30px 20px ;
-        }
-        .href{
-            color: black;
-            text-decoration: none;
-        }
-        .href-hover:hover{
-            text-decoration: underline;
         }
         .footer-item-title{
             font-size: 14px;
@@ -130,9 +140,6 @@
         }
         /*media設定*/
         @media screen and (max-width:768px) {
-            .content-box{
-                display: none;  
-            }
             .footer{
                 display: none;
             }
@@ -150,6 +157,9 @@
             .personal-title{
                 display: none;
             }
+            .information-change-box{
+                display: none;
+            }
         }
         @media screen and (min-width:769px) {
             .phone-personal-title{
@@ -164,25 +174,25 @@
 <body>
     <div class="back-arrow px-4 py-3 bg-white sticky-top">
         <a href="">
-            <i class="fa-solid fa-angle-left href"></i>
+            <i class="fa-solid fa-angle-left fa-lg href px-1"></i>
         </a>
     </div>
     <!--上面是手機專有的回上一頁-->
     <section class="personal-content-box mb-5">
         <div class="personal-title my-4">
             <nav class="d-flex">
-                <a href="#" class="href href-hover">帳號</a>
+                <a href="#" class="href href-hover weight600">帳號</a>
                 <i class="fa-solid fa-angle-right"></i>
-                <span>個人資料</span>
+                <span class="">個人資料</span>
             </nav>
-            <h1 class="mt-3 fw-bolder">個人資料</h1>
+            <h1 class="personal-title-h1 mt-3">個人資料</h1>
         </div>
         <!--上面是網頁title下面是手機title-->
-        <div class="phone-personal-title my-4">
+        <div class="phone-personal-title my-3">
             <h1 class="mt-5">個人資料</h1>
         </div>
         <!--以下是內容-->
-        <div class="personal-information d-flex justify-content-between">
+        <div class="d-flex justify-content-between">
             <div class="personal-information-box">
                 <div class="personal-information-item">
                     <div class="d-flex justify-content-between">
@@ -192,11 +202,11 @@
                             </div>
                             <div class="information-item-data pb-4">
                                 <span class="text-secondary">full name</span>
-                                <span class="text-secondary">這是你旅行證件（駕照或護照）上所記載的姓名。</span>
+                                <span class="text-secondary">(更換內容)-這是你旅行證件（駕照或護照）上所記載的姓名。</span>
                             </div>
                         </div>
                         <div class="py-4">
-                            <button class="edit-or-add-button">編輯</button>
+                            <button class="edit-or-add-button weight600">編輯</button>
                             <button class="cancel-button">取消</button>
                         </div>
                     </div>
@@ -212,7 +222,7 @@
                                     <label for="floatingInput">姓氏</label>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-dark save-btn">儲存</button>
+                            <button type="button" class="btn btn-dark save-btn weight600">儲存</button>
                         </form>
                     </div>
                 </div>
@@ -224,11 +234,11 @@
                             </div>
                             <div class="information-item-data">
                                 <span class="text-secondary">f*****@gmail.com</span>
-                                <span class="text-secondary">使用你隨時可存取的電子郵件地址。</span>    
+                                <span class="text-secondary">(更換內容)-使用你隨時可存取的電子郵件地址。</span>    
                             </div>
                         </div>
                         <div class="py-4">
-                            <button class="edit-or-add-button">編輯</button>
+                            <button class="edit-or-add-button weight600">編輯</button>
                             <button class="cancel-button">取消</button>
                         </div>
                     </div>
@@ -240,7 +250,7 @@
                                     <label for="floatingInput">電子郵件地址</label>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-dark save-btn">儲存</button>
+                            <button type="button" class="btn btn-dark save-btn weight600">儲存</button>
                         </form>
                     </div>
                 </div>
@@ -255,7 +265,7 @@
                             </div>
                         </div>
                         <div class="py-4">
-                            <button class="edit-or-add-button">新增</button>
+                            <button class="edit-or-add-button weight600">新增</button>
                             <button class="cancel-button">取消</button>
                         </div>
                     </div>
@@ -271,7 +281,7 @@
                             </div>
                         </div>
                         <div class="py-4">
-                            <button class="edit-or-add-button">新增</button>
+                            <button class="edit-or-add-button weight600">新增</button>
                             <button class="cancel-button">取消</button>
                         </div>
                     </div>
@@ -284,11 +294,11 @@
                             </div>
                             <div class="information-item-data">
                                 <span class="text-secondary">未提供</span>
-                                <span class="text-secondary">使用永久地址接收郵件。</span>
+                                <span class="text-secondary">(更換內容)-使用永久地址接收郵件。</span>
                             </div>
                         </div>
                         <div class="py-4">
-                            <button class="edit-or-add-button">編輯</button>
+                            <button class="edit-or-add-button weight600">編輯</button>
                             <button class="cancel-button">取消</button>
                         </div>
                     </div>
@@ -321,7 +331,7 @@
                                     <label for="floatingInput">郵遞區號</label>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-dark save-btn">儲存</button>
+                            <button type="button" class="btn btn-dark save-btn weight600">儲存</button>
                         </form>
                     </div>
                 </div>
@@ -333,11 +343,11 @@
                             </div>
                             <div class="information-item-data">
                                 <span class="text-secondary">未提供</span>
-                                <span class="text-secondary">發生緊急情況時，我們可以通知的可靠聯絡人。</span>
+                                <span class="text-secondary">(更換內容)-發生緊急情況時，我們可以通知的可靠聯絡人。</span>
                             </div>
                         </div>
                         <div class="py-4">
-                            <button class="edit-or-add-button">新增</button>
+                            <button class="edit-or-add-button weight600">新增</button>
                             <button class="cancel-button">取消</button>
                         </div>
                     </div>
@@ -370,12 +380,12 @@
                                     <label for="floatingInput">電話號碼</label>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-dark save-btn">儲存</button>
+                            <button type="button" class="btn btn-dark save-btn weight600">儲存</button>
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="personal-trouble-shooting-box ">
+            <div class="personal-trouble-shooting-box">
                 <div class="trouble-shooting-border p-4">
                     <div class="trouble-shooting-icon">
                         <i class="fa-solid fa-file-shield fa-3x"></i>

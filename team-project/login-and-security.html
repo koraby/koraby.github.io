@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .href{
+            color: black;
+            text-decoration: none;
+        }
+        .href-hover:hover{
+            text-decoration: underline;
+        }
+        .weight600{
+            font-weight: 600;
+        }
+        .login-and-security-box{
+            max-width: 1100px;
+            margin: auto;
+            padding: 0px 24px;
+        }
+        .login-and-security-title{
+            margin: 40px 0px ;
+        }
+        .login-and-security-title h1{
+            font-size: 32px;
+            font-weight: 800;
+        }
+        .login-and-security-title nav i{
+            padding: 0px 16px;
+            align-self: center;
+        }
+        .security-navigation-bar button{
+            border: 0px;
+            font-size: 14px;
+        }
+        .security-navigation-bar button:nth-child(1){
+            color: #008489;
+            border-bottom: #008489 solid 1.6px;
+        }
+        .login-status{
+            padding-top: 32px;
+            border-top: 1px solid rgb(235, 235, 235) ;
+        }
+        .login-status-title h2{
+            font-weight: 800;
+            font-size: 24px;
+            padding: 32px 0px 16px;
+        }
+        .account-status-box{
+            border-bottom: 1px solid #EBEBEB ;
+        }
+        .account-status-content{
+            color: #484848;
+        }
+        .update-and-connect-button button{
+            border: 0px;
+            background-color: white;
+            color: #008489;
+        }
+        .update-and-connect-button button:hover{
+            text-decoration: underline;
+        }
+        .security-advise-border{
+            border: solid 1px #DDDDDD;
+            border-radius:12px;
+        }
+        .security-advise-icon i{
+            background-image: linear-gradient(to right, white 50%, yellow 50%);
+        }
+        .security-advise-title{
+            font-size: 18px;
+            font-weight: 800;
+        }
+        .security-advise-subtitle{
+            font-size: 16px;
+            font-weight: 800;
+        }
+        .security-advise-text{
+            color: #484848;
+        }
+        .security-advise-hr{
+            margin: 24px 0px;
+            color:rgb(255, 255, 255) 1px solid;
+        }
+        .improve-and-update-button{
+            padding: 10px 22px;
+            border: 1.6px solid white;
+            background-color: #008489;
+            color: white;
+            font-weight: 800;
+            border-radius:5px;
+        }
+        .password-input{
+            padding: 11px;
+            width: 100%;
+            box-sizing: border-box;
+            border-color: #EBEBEB;
+            border-radius: 4px;
+        }
+        .need-new-password{
+            color: #008489;
+        }
+        .cancel-button{
+            display: none;
+        }
+        .last-time-update{
+            display: none;
+        }
+        .account-stop-content a{
+            color: #D93900;
+            text-decoration: none;
+        }
+        .account-stop-content:hover a{
+            color: #008489;
+            text-decoration: underline;
+        }
+        .phone-login-and-security-title h1{
+            font-size: 22px;
+            font-weight: 800;
+        }
+
+        /*以上是網頁內容以下是footer設定*/
+
+        .footer{
+            border-top: 1px solid #DDDDDD;
+            background-color: #F7F7F7;
+        }
+        .footer-box{
+            margin: auto;
+            max-width: 1100px;
+            display: flex;
+            border-bottom: 1px solid #DDDDDD;
+        }
+        .footer-item{
+            flex-direction: column;
+            width: 33.333333%;
+            padding: 30px 20px ;
+        }
+        .footer-item-title{
+            font-size: 14px;
+            font-weight: bolder;
+            margin-bottom: 14px;
+        }
+        .footer-item a{
+            display: block;
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+        .footer-href{
+            padding: 24px 20px;
+            font-size: 14px;
+            margin: auto;
+            max-width: 1100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-copyright{
+            box-sizing: border-box;
+            display: flex;
+        }
+        .footer-copyright-point{
+            padding: 0px 5px;
+        }
+        .language{
+            margin:0px 16px 0px 8px ;
+        }
+        .footer-international-and-icon i{
+            margin-left: 16px;
+        }
+        .footer-international-and-icon i:hover{
+            cursor: pointer;
+        }
+        /*media設定*/
+        @media screen and (max-width:768px) {
+            .footer{
+                display: none;
+            }
+            .login-and-security-title{
+                display: none;
+            }
+            .security-navigation-bar{
+                display: none;
+            }
+            .login-status{
+                border: 0px;
+            }
+        }
+        @media screen and (min-width:769px) {
+            .phone-login-and-security-title{
+                display: none;
+            }
+            .back-arrow{
+                display: none;
+            }
+            .login-status-and-security-advise{
+                display: flex;
+                justify-content: space-between;
+            }
+            .login-status{
+            width: 58.333333%;
+            }
+            .security-advise{
+            width: 33.333333%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="back-arrow px-4 py-3 bg-white sticky-top">
+        <a href="">
+            <i class="fa-solid fa-angle-left fa-lg href px-1"></i>
+        </a>
+    </div>
+    <!--上面是手機專有的回上一頁-->
+    <section class="login-and-security-box mb-5">
+        <div class="login-and-security-title">
+            <nav class="d-flex">
+                <a href="#" class="href href-hover weight600">帳號</a>
+                <i class="fa-solid fa-angle-right "></i>
+                <span class="weight600">登入與安全性</span>
+            </nav>
+            <h1 class="mt-2">登入與安全性</h1>
+        </div>
+        <!--上面是網頁title下面是手機title-->
+        <div class="phone-login-and-security-title my-4">
+            <h1 class="mt-5">登入與安全性</h1>
+        </div>
+        <!--以下是內容-->
+        <div class="security-navigation-bar">
+            <button class="py-3 me-4 bg-white weight600">登入</button>
+            <button class="py-3 me-4 bg-white weight600">登入要求</button>
+            <button class="py-3 me-4 bg-white weight600">共用存取權限</button>
+        </div>
+        <div class="login-status-and-security-advise">
+            <div class="login-status">
+                <div class="login-status-item">
+                    <div class="login-status-title">
+                        <h2>登入</h2>
+                    </div>
+                    <div class="account-status">
+                        <div class="account-status-box">
+                            <div class="d-flex  justify-content-between mt-4">
+                                <div class="account-status-content">
+                                    <div class="weight600">密碼</div>
+                                    <div class="mt-2 mb-4 last-time-update">
+                                        <div>上次更新：1 小時前</div>
+                                    </div>
+                                </div>
+                                <div class="update-and-connect-button">
+                                    <button class="weight600">更新</button>
+                                    <button class="weight600 cancel-button">取消</button>
+                                </div>
+                            </div>
+                            <form class="mt-2 mb-4">
+                                <div class="mb-2">目前密碼</div>
+                                <input class="password-input mb-2" type="password" value="">
+                                <div class="new-password mb-3">
+                                    <a href="#" class="href href-hover need-new-password">需要新密碼嗎？</a>
+                                </div>
+                                <div class="mb-2">新密碼</div>
+                                <input class="password-input mb-2" type="password" value="">
+                                <div class="mb-2">確認密碼</div>
+                                <input class="password-input mb-2" type="password" value="">
+                                <button class="improve-and-update-button">更新密碼</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-status-item">
+                    <div class="login-status-title">
+                        <h2>社群帳號</h2>
+                    </div>
+                    <div class="account-status">
+                        <div class="account-status-box d-flex justify-content-between mt-4">
+                            <div class="account-status-content">
+                                <div class="weight600">Facebook</div>
+                                <div class="mt-2 mb-4">未連結</div>
+                            </div>
+                            <div class="update-and-connect-button">
+                                <button class="weight600">連結</button>
+                            </div>
+                        </div>
+                        <div class="account-status-box d-flex justify-content-between mt-4">
+                            <div class="account-status-content">
+                                <div class="weight600">Google</div>
+                                <div class="mt-2 mb-4">取消連結</div>
+                            </div>
+                            <div class="update-and-connect-button">
+                                <button class="weight600">已連結</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-status-item">
+                    <div class="login-status-title">
+                        <h2>裝置紀錄</h2>
+                    </div>
+                    <div class="account-status">
+                        <div class="account-status-box d-flex justify-content-between mt-4">
+                            <div class="account-status-content d-flex">
+                                <i class="fa-solid fa-computer fa-2x pe-4"></i>
+                                <div class="">
+                                    <div class="">工作階段</div>
+                                    <div class="mt-2 mb-4">2024年2月11日 15:11</div>
+                                </div>
+                            </div>
+                            <div class="update-and-connect-button">
+                                <button class="weight600">登出裝置</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-status">
+                        <div class="account-status-box d-flex justify-content-between mt-4">
+                            <div class="account-status-content d-flex">
+                                <i class="fa-solid fa-computer fa-2x pe-4"></i>
+                                <div class="">
+                                    <div class="">工作階段</div>
+                                    <div class="mt-2 mb-4">2024年2月11日 15:11</div>
+                                </div>
+                            </div>
+                            <div class="update-and-connect-button">
+                                <button class="weight600">登出裝置</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="security-advise px-2">
+                <div class="security-advise-border p-4 my-2">
+                    <div class="security-advise-icon">
+                        <i class="fa-solid fa-shield-dog fa-3x"></i>
+                    </div>
+                    <div class="security-advise-title my-3">讓你的帳號更加安全</div>
+                    <div class="security-advise-subtitle mb-3">
+                        <span>你的帳號安全：</span>
+                        <span class="text-secondary">低</span>
+                    </div>
+                    <div class="security-advise-text">我們不斷致力提升Airbnb用戶的安全性。 正因如此，我們會檢查每個帳號，盡可能確保所有人的資料都安全無虞。</div>
+                    <hr class="security-advise-hr">
+                    <button class="improve-and-update-button">改進</button>
+                </div>
+            </div>
+        </div>
+        <div class="login-status-title">
+            <h2>帳號</h2>
+        </div>
+        <div class="account-stop-content d-flex justify-content-between py-4">
+            <span>停用你的帳號</span>
+            <a href="#">停用</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-box">
+            <div class="footer-item">
+                <p class="footer-item-title">用戶支援</p>
+                <a href="#" class="href">說明中心</a>
+                <a href="#" class="href">因安全問題而需要協助</a>
+                <a href="#" class="href">AirCover</a>
+                <a href="#" class="href">反歧視</a>
+                <a href="#" class="href">身心障礙支援</a>
+                <a href="#" class="href">退訂選項</a>
+                <a href="#" class="href">檢舉街區問題</a>
+            </div>
+            <div class="footer-item">
+                <p class="footer-item-title">出租房源和舉辦體驗</p>
+                <a href="#" class="href">在 Airbnb 上發布房源</a>
+                <a href="#" class="href">專為房東提供的 AirCover</a>
+                <a href="#" class="href">出租和舉辦體驗的相關資源</a>
+                <a href="#" class="href">社區論壇</a>
+                <a href="#" class="href">房東及體驗達人義務援</a>
+            </div>
+            <div class="footer-item">
+                <p class="footer-item-title">Airbnb</p>
+                <a href="#" class="href">Airbnb 新聞中心</a>
+                <a href="#" class="href">全新功能</a>
+                <a href="#" class="href">投資人</a>
+                <a href="#" class="href">緊急住宿</a>
+            </div>
+        </div>
+        <div class="footer-href">
+            <div class="footer-copyright">
+                <p>© 2024 Airbnb, Inc.</p>
+                <span class="footer-copyright-point">·</span>
+                <a href="#" class="href">隱私</a>
+                <span class="footer-copyright-point">·</span>
+                <a href="#" class="href">相關條款</a>
+                <span class="footer-copyright-point">·</span>
+                <a href="#" class="href">網站地圖</a>
+            </div>
+            <div class="footer-international-and-icon">
+                <i class="fa-solid fa-earth-americas fa-lg"></i>
+                <a href="#" class="href language">繁體中文 (TW)</a>
+                <a href="#" class="href">$ TWD</a>
+                <i class="fa-brands fa-square-facebook fa-lg"></i>
+                <i class="fa-brands fa-line fa-lg"></i>
+                <i class="fa-brands fa-square-x-twitter fa-lg"></i>
+                <i class="fa-brands fa-square-instagram fa-lg"></i>
+            </div>
+        </div>
+    </footer>
+    <!--javaScript kits-->
+    <script src="https://kit.fontawesome.com/eb29614349.js" crossorigin="anonymous"></script>
+</body>
+</html>
