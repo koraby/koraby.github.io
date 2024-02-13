@@ -1,0 +1,319 @@
+{
+    "title":"Buy iPhone 15 ",
+    "name":"iPhone 15 ",
+    "widgets": [
+        {
+            "title": "Model.",
+            "subTitle": "Which is best for you?",
+            "type": "model",
+            "col": 1
+        },
+        {
+            "title": "Finish.",
+            "subTitle": "Pick your favorite。",
+            "choosing":"顏色",
+            "type": "color",
+            "col": 5
+        },
+        {
+            "title": "Storage.",
+            "subTitle": "How much space do you need?",
+            "type": "storage",
+            "col": 1
+        }
+    ],
+    "images":{
+        "iPhone 15":{
+            "blue":[
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-blue.jpg",
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-blue_AV1.jpg",
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-blue_AV2.jpg"
+            ],
+            "pink":[
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-pink.jpg",
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-pink_AV1.jpg",
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-pink_AV2.jpg"
+            ],
+            "yellow":[
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-yellow.jpg",
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-yellow_AV1.jpg",
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-yellow_AV2.jpg"
+            ],
+            "green":[
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-green.jpg",
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-green_AV1.jpg",
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-green_AV2.jpg"
+            ],
+            "black":[
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-black.jpg",
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-black_AV1.jpg",
+                "./images/iphone-15/iphone-15-finish-select-202309-6-1inch-black_AV2.jpg"
+            ]
+        },
+        "iPhone 15 Plus":{
+            "blue":[
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-blue.jpg",
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-blue_AV1.jpg",
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-blue_AV2.jpg"
+            ],
+            "pink":[
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-pink.jpg",
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-pink_AV1.jpg",
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-pink_AV2.jpg"
+            ],
+            "yellow":[
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-yellow.jpg",
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-yellow_AV1.jpg",
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-yellow_AV2.jpg"
+            ],
+            "green":[
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-green.jpg",
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-green_AV1.jpg",
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-green_AV2.jpg"
+            ],
+            "black":[
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-black.jpg",
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-black_AV1.jpg",
+                "./images/iphone-15 pro/iphone-15-finish-select-202309-6-7inch-black_AV2.jpg"
+            ]
+        }
+    },
+    "colors":[
+        {
+            "colorName": "藍色",
+            "colorCode": "blue",
+            "colorImg": "./images/iphone-15/finish-blue-202309.jpg"
+        },
+        {
+            "colorName": "粉紅色",
+            "colorCode": "pink",
+            "colorImg": "./images/iphone-15/finish-pink-202309.jpg"
+        },
+        {
+            "colorName": "黃色",
+            "colorCode": "yellow",
+            "colorImg": "./images/iphone-15/finish-yellow-202309.jpg"
+        },
+        {
+            "colorName": "綠色",
+            "colorCode": "green",
+            "colorImg": "./images/iphone-15/finish-green-202309.jpg"
+        },        {
+            "colorName": "黑色",
+            "colorCode": "black",
+            "colorImg": "./images/iphone-15/finish-black-202309.jpg"
+        }
+    ],
+    "specifications": [
+        {
+            "sku": "iPhone-15-blue-128",
+            "model": "iPhone 15",
+            "storage": "128GB",
+            "color": "blue",
+            "price": 29900
+        },
+        {
+            "sku": "iPhone-15-pink-128",
+            "model": "iPhone 15",
+            "storage": "128GB",
+            "color": "pink",
+            "price": 29900
+        },
+        {
+            "sku": "iPhone-15-yellow-128",
+            "model": "iPhone 15",
+            "storage": "128GB",
+            "color": "yellow",
+            "price": 29900
+        },
+        {
+            "sku": "iPhone-15-green-128",
+            "model": "iPhone 15",
+            "storage": "128GB",
+            "color": "green",
+            "price": 29900
+        },
+        {
+            "sku": "iPhone-15-black-128",
+            "model": "iPhone 15",
+            "storage": "128GB",
+            "color": "black",
+            "price": 29900
+        },
+        {
+            "sku": "iPhone-15-blue-256",
+            "model": "iPhone 15",
+            "storage": "256GB",
+            "color": "blue",
+            "price": 33400
+        },
+        {
+            "sku": "iPhone-15-pink-256",
+            "model": "iPhone 15",
+            "storage": "256GB",
+            "color": "pink",
+            "price": 33400
+        },
+        {
+            "sku": "iPhone-15-yellow-256",
+            "model": "iPhone 15",
+            "storage": "256GB",
+            "color": "yellow",
+            "price": 33400
+        },
+        {
+            "sku": "iPhone-15-green-256",
+            "model": "iPhone 15",
+            "storage": "256GB",
+            "color": "green",
+            "price": 33400
+        },
+        {
+            "sku": "iPhone-15-black-256",
+            "model": "iPhone 15",
+            "storage": "256GB",
+            "color": "black",
+            "price": 33400
+        },
+        {
+            "sku": "iPhone-15-blue-512",
+            "model": "iPhone 15",
+            "storage": "512GB",
+            "color": "blue",
+            "price": 40400
+        },
+        {
+            "sku": "iPhone-15-pink-512",
+            "model": "iPhone 15",
+            "storage": "512GB",
+            "color": "pink",
+            "price": 40400
+        },
+        {
+            "sku": "iPhone-15-yellow-512",
+            "model": "iPhone 15",
+            "storage": "512GB",
+            "color": "yellow",
+            "price": 40400
+        },
+        {
+            "sku": "iPhone-15-green-512",
+            "model": "iPhone 15",
+            "storage": "512GB",
+            "color": "green",
+            "price": 40400
+        },
+        {
+            "sku": "iPhone-15-black-512",
+            "model": "iPhone 15",
+            "storage": "512GB",
+            "color": "black",
+            "price": 40400
+        },
+        {
+            "sku": "iPhone-15-Plus-blue-128",
+            "model": "iPhone 15 Plus",
+            "storage": "128GB",
+            "color": "blue",
+            "price": 32900
+        },
+        {
+            "sku": "iPhone-15-Plus-pink-128",
+            "model": "iPhone 15 Plus",
+            "storage": "128GB",
+            "color": "pink",
+            "price": 32900
+        },
+        {
+            "sku": "iPhone-15-Plus-yellow-128",
+            "model": "iPhone 15 Plus",
+            "storage": "128GB",
+            "color": "yellow",
+            "price": 32900
+        },
+        {
+            "sku": "iPhone-15-Plus-green-128",
+            "model": "iPhone 15 Plus",
+            "storage": "128GB",
+            "color": "green",
+            "price": 32900
+        },
+        {
+            "sku": "iPhone-15-Plus-black-128",
+            "model": "iPhone 15 Plus",
+            "storage": "128GB",
+            "color": "black",
+            "price": 32900
+        },
+        {
+            "sku": "iPhone-15-Plus-blue-256",
+            "model": "iPhone 15 Plus",
+            "storage": "256GB",
+            "color": "blue",
+            "price": 36400
+        },
+        {
+            "sku": "iPhone-15-Plus-pink-256",
+            "model": "iPhone 15 Plus",
+            "storage": "256GB",
+            "color": "pink",
+            "price": 36400
+        },
+        {
+            "sku": "iPhone-15-Plus-yellow-256",
+            "model": "iPhone 15 Plus",
+            "storage": "256GB",
+            "color": "yellow",
+            "price": 36400
+        },
+        {
+            "sku": "iPhone-15-Plus-green-256",
+            "model": "iPhone 15 Plus",
+            "storage": "256GB",
+            "color": "green",
+            "price": 36400
+        },
+        {
+            "sku": "iPhone-15-Plus-black-256",
+            "model": "iPhone 15 Plus",
+            "storage": "256GB",
+            "color": "black",
+            "price": 36400
+        },
+        {
+            "sku": "iPhone-15-Plus-blue-512",
+            "model": "iPhone 15 Plus",
+            "storage": "512GB",
+            "color": "blue",
+            "price": 43400
+        },
+        {
+            "sku": "iPhone-15-Plus-pink-512",
+            "model": "iPhone 15 Plus",
+            "storage": "512GB",
+            "color": "pink",
+            "price": 43400
+        },
+        {
+            "sku": "iPhone-15-Plus-yellow-512",
+            "model": "iPhone 15 Plus",
+            "storage": "512GB",
+            "color": "yellow",
+            "price": 43400
+        },
+        {
+            "sku": "iPhone-15-Plus-green-512",
+            "model": "iPhone 15 Plus",
+            "storage": "512GB",
+            "color": "green",
+            "price": 43400
+        },
+        {
+            "sku": "iPhone-15-Plus-black-512",
+            "model": "iPhone 15 Plus",
+            "storage": "512GB",
+            "color": "black",
+            "price": 43400
+        }
+    ]
+}
