@@ -162,7 +162,7 @@ function createCarouselHTML(images) {
 function changeMinPrice(){
     const selectedSpec = shopData.specifications.filter(spec => spec.model === selectedModel);
     const minPrice = Math.min(...selectedSpec.map(spec => spec.price))
-    document.getElementById("minPrice").innerHTML=`Starting Price From:${minPrice}`
+    document.getElementById("minPrice").innerHTML=`Starting Price From: NT$${minPrice}`
 }
 
 function changeColorTitle(){
