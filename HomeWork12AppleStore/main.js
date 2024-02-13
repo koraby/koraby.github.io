@@ -63,7 +63,7 @@ function createWidgetHTML(widget){
             `
         } else if(widget.type==='storage'){
             itemHTMLs+=
-            `<div class="storage border border-secondary-subtle rounded-3 p-4 d-flex justify-content-between" role="button" onclick="clickHandler(this,'${widget.type}')" data-storage="${item}">
+            `<div class="storage ${item} border border-secondary-subtle rounded-3 p-4 d-flex justify-content-between" role="button" onclick="clickHandler(this,'${widget.type}')" data-storage="${item}">
                 <div class="storage-spec">${item}</div>
                 <div class="price" id="${item}"></div>
             </div>`
@@ -223,7 +223,7 @@ function clickHandler(element, type){
 
     document.querySelectorAll('.storage').forEach(col=>{
         col.classList.remove('border-primary','border-3', 'border-secondary-subtle')
-        if(col.innerText === selectedStorage){
+        if(col.classList.contains(selectedStorage)){
             col.classList.add('border-primary','border-3')
         } else{
             col.classList.add('border-secondary-subtle')
