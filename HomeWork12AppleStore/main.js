@@ -26,7 +26,7 @@ function renderingShop(shop){
         ${title}
     </h1>
     <div class="total-price" id="minPrice">
-        Starting Price From:${minPrice}
+        Starting Price From: NT$${minPrice.toLocaleString()}
     </div>`
     const defaultImages = Object.values(shop.images['iPhone 15']).reduce((acc,cur)=>{
         return acc.concat(cur)
@@ -162,7 +162,7 @@ function createCarouselHTML(images) {
 function changeMinPrice(){
     const selectedSpec = shopData.specifications.filter(spec => spec.model === selectedModel);
     const minPrice = Math.min(...selectedSpec.map(spec => spec.price))
-    document.getElementById("minPrice").innerHTML=`Starting Price From: NT$${minPrice}`
+    document.getElementById("minPrice").innerHTML=`Starting Price From: NT$${minPrice.toLocaleString()}`
 }
 
 function changeColorTitle(){
