@@ -126,62 +126,51 @@
 
         /*以上是網頁內容以下是footer設定*/
 
-        .footer{
+        .footer-set {
             border-top: 1px solid #DDDDDD;
             background-color: #F7F7F7;
+            padding: 20px 60px;
+            font-size: 14px;
         }
-        .footer-box{
-            margin: auto;
-            max-width: 1100px;
-            display: flex;
-            border-bottom: 1px solid #DDDDDD;
-        }
-        .footer-item{
-            flex-direction: column;
-            width: 33.333333%;
-            padding: 30px 20px ;
-        }
-        .hyperlink{
+
+        .footer-set a {
             color: black;
             text-decoration: none;
         }
-        .hyperlink-hover:hover{
+
+        .footer-set a:hover {
             text-decoration: underline;
         }
-        .footer-item-title{
-            font-size: 14px;
-            font-weight: bolder;
-            margin-bottom: 14px;
+
+        .footer-box1 {
+            width: 100%;
+            display: flex;
+            margin-bottom: 20px;
         }
-        .footer-item a{
-            display: block;
-            font-size: 14px;
-            margin-bottom: 14px;
+
+        .footer-box1 ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
         }
-        .footer-hyperlink{
-            padding: 24px 20px;
-            font-size: 14px;
-            margin: auto;
-            max-width: 1100px;
+
+        .footer-item li {
+            margin-bottom: 12px;
+        }
+
+        .footer-item p {
+            margin: 12px 0px;
+        }
+
+        .footer-item-title {
+            font-weight: 800;
+        }
+
+        .footer-box2 {
             display: flex;
             justify-content: space-between;
         }
-        .footer-copyright{
-            box-sizing: border-box;
-            display: flex;
-        }
-        .footer-copyright-point{
-            padding: 0px 5px;
-        }
-        .language{
-            margin:0px 16px 0px 8px ;
-        }
-        .footer-international-and-icon i{
-            margin-left: 16px;
-        }
-        .footer-international-and-icon i:hover{
-            cursor: pointer;
-        }
+
         /*media設定*/
         @media screen and (max-width:768px) {
             .footer{
@@ -362,48 +351,83 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-box">
-            <div class="footer-item">
+    <footer class="footer-set footer">
+        <div class="footer-box1" style="max-width: 1100px; margin: auto;">
+            <div class="footer-item col-lg-4">
                 <p class="footer-item-title">用戶支援</p>
-                <a href="#" class="hyperlink hyperlink-hover">說明中心</a>
-                <a href="#" class="hyperlink hyperlink-hover">因安全問題而需要協助</a>
-                <a href="#" class="hyperlink hyperlink-hover">AirCover</a>
-                <a href="#" class="hyperlink hyperlink-hover">反歧視</a>
-                <a href="#" class="hyperlink hyperlink-hover">身心障礙支援</a>
-                <a href="#" class="hyperlink hyperlink-hover">退訂選項</a>
-                <a href="#" class="hyperlink hyperlink-hover">檢舉街區問題</a>
+                <ul>
+                    <li>
+                        <a href="#">說明中心</a>
+                    </li>
+                    <li>
+                        <a href="#">因安全問題而需要協助</a>
+                    </li>
+                    <li>
+                        <a href="#">AirCover</a>
+                    </li>
+                    <li>
+                        <a href="#">反歧視</a>
+                    </li>
+                    <li>
+                        <a href="#">身心障礙支援</a>
+                    </li>
+                </ul>
             </div>
-            <div class="footer-item">
+            <div class="footer-item col-lg-4" style="max-width: 1100px;">
                 <p class="footer-item-title">出租房源和舉辦體驗</p>
-                <a href="#" class="hyperlink hyperlink-hover">在 Airbnb 上發布房源</a>
-                <a href="#" class="hyperlink hyperlink-hover">專為房東提供的 AirCover</a>
-                <a href="#" class="hyperlink hyperlink-hover">出租和舉辦體驗的相關資源</a>
-                <a href="#" class="hyperlink hyperlink-hover">社區論壇</a>
-                <a href="#" class="hyperlink hyperlink-hover">房東及體驗達人義務援</a>
+                <ul>
+                    <li>
+                        <a href="#">在 Airbnb 上發布房源</a>
+                    </li>
+                    <li>
+                        <a href="#">專為房東提供的 AirCover</a>
+                    </li>
+                    <li>
+                        <a href="#">出租和舉辦體驗的相關資源</a>
+                    </li>
+                    <li>
+                        <a href="#">社區論壇</a>
+                    </li>
+                    <li>
+                        <a href="#">房東及體驗達人義務援</a>
+                    </li>
+                </ul>
             </div>
-            <div class="footer-item">
+            <div class="footer-item col-lg-4" >
                 <p class="footer-item-title">Airbnb</p>
-                <a href="#" class="hyperlink hyperlink-hover">Airbnb 新聞中心</a>
-                <a href="#" class="hyperlink hyperlink-hover">全新功能</a>
-                <a href="#" class="hyperlink hyperlink-hover">投資人</a>
-                <a href="#" class="hyperlink hyperlink-hover">緊急住宿</a>
+                <ul>
+                    <li>
+                        <a href="#">Airbnb 新聞中心</a>
+                    </li>
+                    <li>
+                        <a href="#">全新功能</a>
+                    </li>
+                    <li>
+                        <a href="#">工作機會</a>
+                    </li>
+                    <li>
+                        <a href="#">投資人</a>
+                    </li>
+                    <li>
+                        <a href="#">緊急住宿</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="footer-hyperlink">
+        <div class="footer-box2" style="max-width: 1100px;  margin: auto;">
             <div class="footer-copyright">
-                <p>© 2024 Airbnb, Inc.</p>
-                <span class="footer-copyright-point">·</span>
-                <a href="#" class="hyperlink hyperlink-hover">隱私</a>
-                <span class="footer-copyright-point">·</span>
-                <a href="#" class="hyperlink hyperlink-hover">相關條款</a>
-                <span class="footer-copyright-point">·</span>
-                <a href="#" class="hyperlink hyperlink-hover">網站地圖</a>
+                <span>© 2024 Airbnb, Inc.</span>
+                <span>·</span>
+                <a href="#">隱私</a>
+                <span>·</span>
+                <a href="#">相關條款</a>
+                <span>·</span>
+                <a href="#">網站地圖</a>
             </div>
             <div class="footer-international-and-icon">
                 <i class="fa-solid fa-earth-americas fa-lg"></i>
-                <a href="#" class="hyperlink language">繁體中文 (TW)</a>
-                <a href="#" class="hyperlink ">$ TWD</a>
+                <a href="#">繁體中文 (TW)</a>
+                <a href="#">$ TWD</a>
                 <i class="fa-brands fa-square-facebook fa-lg"></i>
                 <i class="fa-brands fa-line fa-lg"></i>
                 <i class="fa-brands fa-square-x-twitter fa-lg"></i>
@@ -411,6 +435,7 @@
             </div>
         </div>
     </footer>
+
 
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/eb29614349.js" crossorigin="anonymous"></script>
